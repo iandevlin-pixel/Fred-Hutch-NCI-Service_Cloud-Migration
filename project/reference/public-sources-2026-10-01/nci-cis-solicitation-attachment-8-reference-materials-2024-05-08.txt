@@ -1,0 +1,715 @@
+                    ATTACHMENT 8 – CONTACT CENTER REFERENCE MATERIALS
+
+                          NCI Contact Center Contract 2022 Volume and Handling Time
+
+ Telephone
+ Includes calls to 800-4-CANCER for cancer information, clinical trials and smoking cessation counseling, 877-
+ 44U-QUIT for smoking cessation counseling and 855-QUIT-VET for smoking cessation counseling for veterans.
+
+ NCI Contact Center Telephone
+ Volume Jan. 1, 2018 - Dec. 31,
+ 2022
+
+                                          Offered Calls                      Monthly Average
+     800-4CANCER                                                   48,280                4,023
+     877-44U-QUIT                                                  10,519                  877
+     855-QUIT-VET                                                  15,170                1,264
+     Total                                                         73,969                6,164
+
+ 1
+   These data include calls to 1-800-4-CANCER for cancer information, smoking cessation counseling and 1-877-44U-QUIT
+ for smoking cessation counseling and 855-QUIT-VET for smoking cessation counseling for veterans - during hours of
+ operation. Current hours of operation are Monday - Friday, 9 a.m. to 9 p.m. Eastern.
+ 2
+   Smoking Cessation includes calls taken from 1-800-44-U-QUIT, NCI’s CIS Smoking Cessation Line, and 1-800-QUIT-
+ NOW, the National Cessation Portal Number (See IAA Descriptions Document).
+ 3
+   QUIT VET includes calls taken from 1-855-QUIT-VET and outbound calls based on current protocols. (See IAA
+ Descriptions Document).
+
+ Source: Verizon Network Monthly data reports
+
+ Average Handling Time for NCI Contact
+ Center Calls Jan. 1, 2022 - Dec. 31, 2022
+
+     Queue                                Average ACD Time (Talk Time)1 Average After Call Work Time
+                                          (min:sec)                      (min:sec)
+     Cancer (English)                                              11:24                           3:51
+     Cancer (Spanish)                                              12:42                           4:09
+     Smoking Cessation (English)                                   10:09                           3:51
+     Smoking Cessation (Spanish)                                   11:42                           3:30
+     Overall Average                                               11:29                           3:50
+
+ 1
+  ACD Call Time does not include the time when a caller is placed on hold during a call. Hold time data is only counted at
+ the agent level, not at the skill level, so it is not available for each queue. The average hold time per call across the four
+ queues is 3 min. 35 sec. (This does not include the time a caller is waiting in queue.)
+
+ Source: TTEC CUIC
+
+
+
+
+ATTACHMENT 8 – CONTACT
+CENTER REFERENCE MATERIALS                            Page 1 of 17                                         May 14, 2024
+ Average Handling Time for NCI Quit
+ Vet Calls Jan. 1, 2022 - Dec. 31, 2022
+
+     Queue                          Average ACD Time (TalkTime)1                  Average After Call Work Time
+                                    (min:sec)                                     (min:sec)
+     Quit Vet English                                                    13:39                                      4:34
+     Quit Vet Spanish                                                    20:09                                      5:33
+     Overall Average                                                     16:54                                      5:34
+
+ Source: TTEC CUIC
+
+ LiveHelp
+ Chats using the service at https://cissecure.nci.nih.gov/LiveHelp/welcome.asp, available through
+ www.cancer.gov and www.smokefree.gov.
+
+ LiveHelp Volume
+ Jan. 1, 2022 - Dec. 31, 2022
+
+      Queue                     Chats Answered1                 Abandon Chats2                  Offered Chats3
+
+      Cancer                                         12,809                              757                     13,566
+      Smoking Cessation                              11,598                              673                     12,271
+      Total                                          24,407                            1,430                     25,837
+
+ Source: LiveHelp Reporting Application
+
+ Average Handling Time for Chats
+ Jan. 1, 2022 -Dec. 31, 2022
+
+      Queue                      Average Handling Time1 for Chats              Average Handling Time1 for Chats
+                                 Answered (min:sec)                            Answered-But-No-Interaction (min:sec)
+
+      Cancer                                                           15:18                                       07:32
+      Smoking Cessation                                                11:06                                       06:40
+      Overall Average                                                  15:15                                       07:36
+
+ 1
+     Handling Time is the total time for each session and includes talk time and after call work time.
+
+ Source: LiveHelp Reporting Application
+
+
+
+ 1
+   Chats Answered are sessions where an interaction occurred between an Information Specialist and a user.
+ 2
+   Chats Abandoned are chats where the user disconnected before the chat was answered, or where an Information
+ Specialist responded to an incoming session but there was no interaction with the user. This could be due to the user never
+ sending a question after initiating a chat or due to a technical problem with the user’s browser.
+ 3
+   Offered Chats = Chats Answered + Chats Answered-But-No-Interaction + Chats Abandoned sessions where an
+ Information Specialist responded to an incoming session but there was no interaction with the user.
+
+ATTACHMENT 8 – CONTACT
+CENTER REFERENCE MATERIALS                              Page 2 of 17                                       May 8, 2024
+ E-mail
+ E-mail messages to NCIinfo@nih.gov, cancergovstaff@mail.nih.gov and nciespanol@mail.nih.gov or through
+ the Web forms at http://www.cancer.gov/contact and http://www.cancer.gov/espanol/instituto/correo-
+ electronico.
+
+ NCI Contact Center E-mail Volume
+ Jan. 1, 2022 - Dec. 31, 2022
+
+                          English         Spanish
+   Monthly Average                  170             15
+
+ Source: E-mail Reports
+
+
+ NCI Social Media Contacts
+
+ Jan. 1, 2022 - Dec. 31, 2022
+ Facebook, Instagram, YouTube and Twitter postings on the NCI’s Facebook and Twitter Channels answered by
+ the Contact Center.
+
+   Social Media Channel                        Totals               Monthly Average
+   English Social Media                                       337                     28
+   Facebook Spanish                                           393                     33
+   Total Social Media                                         730                     61
+
+
+        Source: Social Media Reports
+
+
+
+
+ATTACHMENT 8 – CONTACT
+CENTER REFERENCE MATERIALS                     Page 3 of 17                                May 8, 2024
+ NCI Contact Center Customer and Subject of Interaction
+ Data: Top Categories - 2022
+
+    Point of Access                                                             % of Inquiries
+    LiveHelp                                                                            49.4%
+    Telephone                                                                           40.5%
+    Email                                                                                9.0%
+    Social Media                                                                         1.1%
+    Total                                                                              100.0%
+
+ English Cancer Queue
+ English calls, chats, emails, and social media posts for cancer information.
+
+
+    Customer Type                                                               % of Inquiries
+    Spouse, Friend, Relative                                                            24.6%
+    Cancer Patient -Treated                                                             22.0%
+    General Public                                                                      12.4%
+    Organization                                                                         4.6%
+    Health Professional                                                                  3.7%
+    Other                                                                               32.7%
+    Total                                                                               100%
+
+
+    Subject of Interaction*                                                     % of Inquiries
+    CT-General Information Only                                                         11.4%
+    MC-Finding Health Care Services                                                      9.6%
+    G-General Cancer Questions                                                           6.3%
+    CT-General Information & Search                                                      6.3%
+    NCI-Other                                                                            5.9%
+    Other                                                                               60.5%
+    Total                                                                               100%
+   *May have multiple values for a single inquiry
+
+
+    Primary Cancer Site/Type*                                                   % of Inquiries
+    Breast Cancer                                                                        9.7%
+    Prostate                                                                             5.2%
+    Colorectal                                                                           4.9%
+    Lung & Bronchus                                                                      4.5%
+    Pancreas Cancer                                                                      2.5%
+    *May have multiple values for a single inquiry
+
+
+
+ATTACHMENT 8 – CONTACT
+CENTER REFERENCE MATERIALS                      Page 4 of 17                          May 8, 2024
+   English Smoking Queue
+   English calls, chats, emails, and social media posts for smoking cessation counseling.
+
+
+    Customer Type                                                                           % of Inquiries
+    Cigarette smoker                                                                                42.9%
+    Other Tobacco User                                                                               9.6%
+    Relative/Friend of Tobacco User                                                                  1.7%
+    Health Professional                                                                              1.5%
+    General Public                                                                                   1.2%
+    Other                                                                                           43.1%
+    Total                                                                                           100%
+
+
+    Subject of Interaction*                                                                 % of Inquiries
+    SM-Cessation/Counseling Information                                                             43.1%
+    SM-NRT                                                                                           5.8%
+    SM-Cigarettes                                                                                    3.1%
+    SM-E-cigs                                                                                        2.3%
+    Other                                                                                           45.7%
+    Total                                                                                           100%
+   *May have multiple values for a single inquiry
+
+
+    Primary Cancer Site/Type*                                                               % of Inquiries
+    Not applicable/no site mentioned                                                                50.1%
+    Disconnect/break-off                                                                            47.6%
+    *May have multiple values for a single inquiry
+
+
+
+
+ATTACHMENT 8 – CONTACT
+CENTER REFERENCE MATERIALS                     Page 5 of 17                                       May 8, 2024
+ Spanish Queue
+ Spanish calls, chats, emails, and social media posts for cancer information and smoking cessation
+ counseling.
+
+
+    Customer Type
+    Spouse, Friend, Relative                                                                   18.1%
+    General Public                                                                             12.0%
+    Cancer Patient                                                                             10.4%
+    Cigarette Smoker                                                                            9.0%
+    Health Professional                                                                         0.8%
+    Other                                                                                      49.7%
+    Total                                                                                      100%
+
+
+    Subject of Interaction*
+    G-General cancer questions                                                                 11.8%
+    SM-Cessation/Counseling Information                                                         8.3%
+    MC-Finding Health Care Services                                                             7.2%
+    CT-General Information Only                                                                 3.9%
+    G-Other Inquiries                                                                           3.2%
+    Other                                                                                      65.6%
+    Total                                                                                      100%
+   *May have multiple values for a single inquiry
+
+
+    Primary Cancer Site/Type*
+    Breast Cancer                                                                               5.4%
+    Lung and Bronchus                                                                           2.2%
+    Prostate                                                                                    2.1%
+    Colorectal                                                                                  2.1%
+    Cervical                                                                                    1.2%
+    Other                                                                                      87.0%
+    *May have multiple values for a single inquiry
+
+
+
+
+ATTACHMENT 8 – CONTACT
+CENTER REFERENCE MATERIALS                    Page 6 of 17                                   May 8, 2024
+                           National Cancer Institute’s Cancer Information Service
+                                 Information Specialist Training Modules
+
+
+       Training Program and Administrative Overview
+           • National Cancer Institute / Cancer Information Service Overview
+           • Role of the Information Specialist
+           • Systems Training
+           • Communication Mechanics and Strategies
+
+       Cancer Biology
+          • Biology Basics Part 1
+          • Diagnosis, Staging and Tumor Grade Part 2
+
+       Resources and Referrals
+
+       Cancer Risk and Screening
+
+       Cancer Treatment
+       • Treatment Overview
+       • Clinical Trials
+              o Clinical Trials Overview
+              o Clinical Trials Searching Strategies
+              o National Cancer Institute and National Institutes of Health Clinical Center Overview
+
+       Coding and Documentation
+
+       Quality Assurance Overview
+
+
+       Psychosocial, Survivorship, and End-of-Life Issues
+
+       Cancer Sites:
+          • Colon Cancer
+          • Prostate Cancer
+          • Breast Cancer
+          • Cervical Cancer, Cervical Changes and the Human Papillomavirus
+          • Hematologic Cancers
+          • Lung Cancer and Smoking Cessation
+
+       Other Modules
+       • Handling Potentially Suicidal Clients
+       • Cultural Competency/Health Literacy
+       • Complementary and Alternative Medicine (CAM)
+       • Publications Ordering Service (POS)
+       • Resource Packet Training
+       • Schedules: What You Need to Know
+
+ATTACHMENT 8 – CONTACT
+CENTER REFERENCE MATERIALS                   Page 7 of 17                                  May 8, 2024
+                        NCI’s Cancer Information Service Quality Assurance Standards
+
+   Contractors must meet quality assurance standards for Service Access and Service Quality as outlined
+   below. Quality Assurance for Service Access measure the efficiency of response to incoming inquiries;
+   Quality Assurance for Service Quality measure the quality of service provided to the public on each
+   access channel, based on customer expectations and measured by NCI provided quality assurance tools
+   and systems.
+
+                                                              Assessment
+                  Standard                      Metric                           Method of Surveillance
+                                                                Period
+
+    SERVICE ACCESS
+
+        1.   Abandon Rate: Telephone      4% or less         Weekly           Call management system
+                                                             average
+
+        2.   Service Level: Telephone     80% in 60          Weekly           Call management system
+                                          seconds            average
+
+        3.    Average Speed of Answer     30 seconds or      Weekly           Call management system
+             (ASA): Telephone             less               average
+
+        4. Abandon Rate: LiveHelp         10%                Weekly           RightNOW or other system
+                                                             average          specified by Government
+
+        5. Service Level: LiveHelp        80% in 20          Weekly           RightNOW or other system
+                                          seconds            average          specified by Government
+
+        6. E-mail Response Time           4 business days    Weekly           RightNOW or other system
+                                          or less                             specified by Government
+
+        7. Available Time                 99%                Monthly          RightNOW or other system
+                                                                              specified by Government
+
+    SERVICE QUALITY
+
+    Quality scores on all access          Average Score:     Quarterly        Calabrio or other system
+    channels                              90%                                 specified by Government
+
+    Customer Satisfaction scores          Meet or exceed     Quarterly        OMB Customer Service
+                                          score of 86.                        Demographics Collection
+
+
+
+
+ATTACHMENT 8 – CONTACT
+CENTER REFERENCE MATERIALS                  Page 8 of 17                                  May 8, 2024
+   NCI Contact Center
+   Policies and Procedures
+
+
+
+   Policies
+
+   Policy 1        NCI Is the Primary Source of Cancer Information
+   Policy 2        Confidentiality of Communications
+   Policy 3        Limitations of Types of Information Provided
+   Policy 4        Referrals to Physicians, Medical Facilities, and Cancer-Related Services
+   Policy 5        Data Collection in the NCI Contact Center
+
+
+
+   Procedures
+
+   OP-1       Follow-up Call backs
+   OP-2       Embargoed Information
+   OP-3       Referrals to Other Organizations
+   OP-4       Donations
+   OP-5       Collecting Customer Service/Demographic Data from Contact Center Clients
+   OP-6       Sending Materials
+   OP-7       Serving International Clients
+   OP-8       Non-NCI Resources for Cancer Content
+   OP-9       Clinical Trial Searches
+   OP-10      Use of Medical Disclaimer in NCI Contact Center Interactions
+
+
+
+
+ATTACHMENT 8 – CONTACT
+CENTER REFERENCE MATERIALS                      Page 9 of 17                                  May 8, 2024
+   ECR Diagram 800-4-CANCER
+                                                                                                Thank you for calling the NCI’s                                                                                                              Hear msg. again, press 8
+                                                                                                 CIS. To continue in English,                                                                                                                Previous Menu, press 9
+                                                                                                    press or say 1 now.                                                                                                                      Ca. Info. Spec, press 0
+
+                                                                                                                                                                                                  General Closed Clinical Trials
+                                                                                                         (Spanish)                                                                                Spanish (Plan 8)
+                                                                                                   To continue in Spanish,
+                                                                                                    press or say 2 now.                                                                                                                      MSG 1505/3005 (press)
+                                                                                                                                                                                                                                             MSG 2005/4005 (say)
+                                                                                                                                                                                                                                             Your call cannot be
+                                                                                                                                                                                                                                             completed at this time...
+                                           Information is also on the internet.                                                      Information is also on the internet.
+                                           Call may be monitored or recorded                                                         Call may be monitored or recorded
+                                           Please select from ...4 choices                                                           Please select from ...4 choices                                                                         MSG 1504/3004
+                                                                                                                                                                                                                                             This selection is not correct.
+                                                                                                                                                                                                   Emergency Closed Plan 2) RAU
+
+
+                                                                                                                                                                                                                                             Standard Messages
+
+                                                                                                                                                                                                                                             Your entry is invalid (9822)
+                     To speak with a Cancer Information         To speak with Clinical Trials                 To speak with a smoking cessation            To hear recorded information about
+                     Specialist, Press or Say 1                 Specialist, Press or Say 2.                   counselor, Press or Say 3.                   cancer, Press or Say 4.                                                           Thank you for calling (9823)
+                                .
+                                                                                                                                                                                                                                             Please try again (S625)
+
+                                                                                                                                                                                                                                             Goodbye (9824)
+
+                    Please hold while we transfer you to        Please hold while we transfer you to         Please hold while we transfer you to                                                                                            Please try again (9825)
+                    a Cancer Information Specialist.            a Clinical Trials Specialist.                a smoking cessation counselor.                 Please select from the following
+                                                                                                                                                            seven choices…                                                                   We did not receive your
+                                                                                                                                                                                                                                             response (9833)
+
+
+
+
+      RAU
+    For Topics in the news               RAUInformation about quitting
+                                         For                                      RAUgeneral information about
+                                                                                   For                                  RAUinformation about cancer
+                                                                                                                        For                                    For information about cancer
+                                                                                                                                                              RAU                                For information about cancer
+                                                                                                                                                                                                RAU                                For other ways to get
+                                         smoking                                   cancer                               prevention and cancer tests            treatment                         research                          information from the NCI
+
+
+
+
+    M 5001 – 5007 (Eng Press)             M 5061 – 5067 (Eng Press)               M 5011 – 5017 (Eng Press)              M 5021 – 5027 (Eng Press)             M 5031 – 5037 (Eng Press)         M 5041 – 5047 (Eng Press)         M 5051 – 5057 (Eng Press)
+    M 6001 – 6007 (Eng Say)               M 5071 – 5077 (Eng Say)                 M 6011 – 6017 (Eng Say)                M 6021 – 6027 (Eng Say)               M 6031 – 6037 (Eng Say)           M 6041 – 6047 (Eng Say)           M 6051 – 6057 (Eng Say)
+    M 7001 – 7007 (Spa Press)             M 7101 – 7107 (Spa Press)               M 7011 – 7017 (Spa Press)              M 7021 – 7027 (Spa Press)             M 7031 – 7037 (Spa Press)         M 7041 – 7047 (Spa Press)         M 7051 – 7057 (Spa Press)
+    M 8001 – 8007 (Spa Say)               M 8101 – 8107 (Spa Say)                 M 8011 – 8017 (Spa Say)                M 8021 – 8027 (Spa Say)               M 8031 – 8037 (Spa Say)           M 8041 – 8047 (Spa Say)           M 8051 – 8057 (Spa Say)
+
+    English                       Remote Audio Update (RAU)
+
+    5000 & 6000 series
+    Spanish
+    7000 & 8000 series
+
+
+
+
+ATTACHMENT 8 – CONTACT
+CENTER REFERENCE MATERIALS                                                                                        Page 10 of 17                                                                                                     May 8, 2024
+   CIS Automated Messages (RAU)
+                                                                                               CIS Automated Messages (RAU)
+
+
+
+
+    For info about cancer prevention and cancer tests (press or say 4)       MSG 1518/3018 (press)
+    1. How to Prevent Cancer - PE5021, SE6021, PS7021, SS8021                MSG 2018/4014 (say)
+    2. Lung Cancer Prevention - PE5022, SE6022, PS7022, SS8022
+    3. Finding Colon Cancer Early - PE5023, SE6023, PS7023, SS8023
+    4. Finding Prostate Cancer Early - PE5024, SE6024, PS7024, SS8024
+    5. Finding Breast Cancer Early - PE5025, SE6025, PS7025, SS8025
+    6. Reducing the Risk of Cervical Cancer - PE5026, SE6026, PS7026, SS8026
+    7. PE5027, SE6027, PS7027, SS8027
+    8. PE5028, SE6028, PS7028, SS8028
+
+
+
+
+ATTACHMENT 8 – CONTACT
+CENTER REFERENCE MATERIALS                                                              Page 11 of 17                         May 8, 2024
+                                                                                             MSG 100 (PLAN 1)                                                                                                          MSG 108 (English)
+                                                                                         Thank you for calling the NCI’s                                                      General Closed                           MSG 308 (Spanish)
+                                                                                              Smoking Quitline.                                                               MSG 102 (English)                        Hear msg. again, press #
+                                                                                            MSG 101 (English)                                                                 MSG 302 (Spanish)                        Previous Menu, press 9
+                                                                                            MSG 301 (Spanish)                                                                                                          Smk. Info. Spec, press 0
+     CIS 877-44U-QUIT Enhanced Call Routing (ECR)
+                                                                                        We offer service in English and
+     12/20/04                                                                           Spanish. To continue in English,                                                      Emergency Closed (PLAN 2) RAU            MSG 105 (English)
+                                                                                        press 1. To continue in Spanish,                                                      MSG 103 (English)
+                                                                                                    press 2.
+                                                                                                                                                                                                                       MSG 305 (Spanish)
+                                                                                                                                                                              MSG 303 (Spanish)                        Your call cannot be
+                                                                                                                                                                                                                       completed at this time...
+                                                                                                                                                                              Holiday Closed (PLAN 3) RAU
+                                                                                   MGS 106 (English)                                                                          MSG 104 (English)                        Standard Messages
+                                                                                   MSG 306 (Spanish)                                                                          MSG 304 (Spanish)
+                                                                                   Your call may by monitored or recorded                                                                                              Your entry is invalid (S622)
+                                                                                   Please select from ...two choices. Select
+                                                                                   1 to speak with a specialist or press 2 to                                                                                          Thank you for calling (S623)
+                                                                                   hear record information.
+                                                                                                                                                                                                                       Goodbye (S624)
+
+                                                                                                                                                                                                                       Please try again (9825)
+
+                                                                                                                                                                                                                       Your call cannot be completed
+                                                                                                                                                               MSG 109 (English)                                       at this time. Please try your call
+                     MSG 107 (English)                                                                                                                         MSG 309 (Spanish)                                       again later. (S628)
+                     MSG 307 (Spanish)                                                                                                                         Please select from the following
+                     Please hold while we transfer you to a                                                                                                    choices. At any time you can press 0                    We did not receive your
+                     Smoking Counselor.                                                                                                                        & be routed to a Smoking Specialist.                    response (S633)
+
+
+
+
+    MSG 110 (English)               MSG 110 (English)         MSG 110 (English)                 MSG 110 (English)               MSG 110 (English)          MSG 110 (English)                   MSG 110 (English)            MSG 110 (English)
+    MSG 310 (Spanish)               MSG 310 (Spanish)         MSG 310 (Spanish)                 MSG 310 (Spanish)               MSG 310 (Spanish)          MSG 310 (Spanish)                   MSG 310 (Spanish)            MSG 310 (Spanish)
+    Press 1                         Press 2                   Press 3                           Press 4                         Press 5                    Press 6                             Press 7                      Press 8
+    Health risks of smoking         Benefits of quitting      Thinking about quitting           After you quit                  How to help someone quit   ?                                   ?                            ?
+
+
+
+
+    MSG 111 (English)               MSG 112 (English)         MSG 113 (English)                 MSG 114 (English)               MSG 115 (English)          MSG 116 (English)                   MSG 117 (English)            MSG 118 (English)
+    MSG 311 (Spanish)               MSG 312 (Spanish)         MSG 313 (Spanish)                 MSG 314 (Spanish)               MSG 315 (Spanish)          MSG 316 (Spanish)                   MSG 317 (Spanish)            MSG 318 (Spanish)
+    M 120 – 127 (English)           M 128 – 135 (English)     M 136 – 143 (English)              M 144 – 151 (English)          M 152 – 159 (English)      M 160 – 167 (English)               M 168 – 175 (English)         M 176 – 183 (English)
+    M 320 – 327 (Spanish)           M 328 – 335 (Spanish)     M 336 – 343 (Spanish)              M 344 – 351(Spanish)           M 352 – 359 (Spanish)      M 360 – 367 (Spanish)               M 368 – 375 (Spanish)         M 376 – 383 (Spanish)
+
+
+
+
+    English
+    100 series
+    Spanish
+    300 series
+
+
+
+
+ATTACHMENT 8 – CONTACT
+CENTER REFERENCE MATERIALS                                                                             Page 12 of 17                                                                                                   May 8, 2024
+ATTACHMENT 8 – CONTACT
+CENTER REFERENCE MATERIALS   Page 13 of 17   May 8, 2024
+                                                              General Closed (Plan 2)
+
+
+
+    855-QUIT-VET
+    855-784-8838
+                                                              Holiday Closed (Plan 3)
+
+
+
+
+                                                              Emergency Closed Plan 4) RAU
+
+
+    Contact Center                  Contact Center
+    DNIS: 8300001                   DNIS: 8300002
+    VA Quit-Smoking English         VA Quit-Smoking Spanish
+
+
+
+
+    ECR AUDIO SCRIPT
+    Talent: English: Melissa
+            Spanish: Carmen
+
+
+
+
+ATTACHMENT 8 – CONTACT
+CENTER REFERENCE MATERIALS     Page 14 of 17                              May 8, 2024
+                                GOVERNMENT FURNISHED INFORMATION
+
+Training Modules List
+
+   1. Training Program and Administrative Overview
+          a. National Cancer Institute / Cancer Information Service Overview
+          b. Role of the Information Specialist
+          c. Systems Training
+          d. Communication Mechanics and Strategies
+
+   2. Cancer Biology
+         a. Biology Basics Part 1
+         b. Diagnosis, Staging and Tumor Grade Part 2
+
+   3. Resources and Referrals
+
+   4. Cancer Risk and Screening
+
+   5. Cancer Treatment
+         a. Treatment Overview
+         b. Clinical Trials
+                   i. Clinical Trials Overview
+                  ii. Clinical Trials Searching Strategies
+                 iii. National Cancer Institute and National Institutes of Health Clinical Center Overview
+
+   6. Coding and Documentation
+
+   7. Quality Assurance Overview
+
+   8. Psychosocial, Survivorship, and End-of-Life Issues
+
+   9. Cancer Sites:
+         a. Colon Cancer
+         b. Prostate Cancer
+         c. Breast Cancer
+         d. Cervical Cancer, Cervical Changes, and the Human Papillomavirus
+         e. Hematologic Cancers
+         f. Lung Cancer and Smoking Cessation
+
+   10. Other Modules
+          a. Handling Potentially Suicidal Clients
+          b. Cultural Competency/Health Literacy
+          c. Complementary and Alternative Medicine (CAM)
+          d. Publications Ordering Service (POS)
+          e. Resource Packet Training
+ATTACHMENT 8 – CONTACT
+CENTER REFERENCE MATERIALS                   Page 15 of 17                                  May 8, 2024
+Current NCI CIS Quality Standards:
+
+    1. Cancer- Telephone, Email, LiveHelp
+    2. Smoking Cessation- Telephone, Email, LiveHelp
+
+CIS Policies and Procedures List
+
+    1. Policies
+             •    Policy 1         NCI Is the Primary Source of Cancer Information
+             •    Policy 2         Confidentiality of Communications
+             •    Policy 3         Limitations of Types of Information Provided
+             •    Policy 4         Referrals to Physicians, Medical Facilities, and Cancer-Related Services
+             •    Policy 5         Data Collection in the NCI CIS
+
+   2. Procedures
+           • OP-1                  Follow-up Call backs
+           • OP-2                  Embargoed Information
+           • OP-3                  Referrals to Other Organizations
+           • OP-4                  Donations
+           • OP-5                  Collecting Customer Service/Demographic Data from CIS Clients
+           • OP-6                  Sending Materials
+           • OP-7                  Serving International Clients
+           • OP-8                  Non-NCI Resources for Cancer Content
+           • OP-9                  Clinical Trial Searches and Callbacks
+           • OP-10                 Use of Medical Disclaimer in NCI CIS Interactions
+           • OP-11                 Reporting Emergencies and System Outages
+           • OP-12                 Center for Cancer Research (CCR) Inquiries
+
+NCI CIS Systems
+
+1. IVR and Network Diagrams
+            • ECR Diagram 1-800-4-CANCER
+            • ECR Diagram 1-877-44U-QUIT
+            • ECR Diagram 1-855-QUIT-VET
+            • ECR Diagram 1-888-624-1927 (CCR)
+            • NCI CIS Network Infrastructure
+
+2. NCI CIS Systems Documentation and User Manuals
+
+NCI CIS Additional Documentation
+
+    1. Approved Non-NCI Resources List
+
+    2. NCI CIS Contact Record Coding Manual
+
+ATTACHMENT 8 – CONTACT
+CENTER REFERENCE MATERIALS                       Page 16 of 17                                   May 8, 2024
+   3. NCI CIS IAA Descriptions
+
+   4. NCI Org Charts
+
+   5. NCI CIS Data Request Form
+
+   6. NCI CIS Staff Census Template
+
+   7. NCI CIS Monthly Deliverable Template
+
+   8. NCI CIS Performance Improvement Plan Template
+
+   9. NCI CIS Quality Assurance Confidentiality Statement
+
+   10. NCI CIS Quality Assurance Staff Acknowledgement Form
+
+   11. CIS Innovation and Strategy Plan Template
+
+   12. NCI PowerPoint Slide Templates
+
+   13. NCI Identify Guidelines
+
+   14. NCI Communication Guidelines
+
+   15. NCI Letterhead Template
+
+   16. NCI CIS IVR Scripts
+
+   17. NCI National Organizations that Offer Support Services Application Form
+
+   18. NCI CIS Email Response Templates
+
+   19. NCI CIS Standard Response Library (RightNOW/Oracle Knowledge Base)
+
+   20. Inquiry Cover Letters (English and Spanish)
+
+           •   Info from the NCI
+           •   Clinical Trials
+           •   Genetics
+           •   Hospitals
+           •   Smoking Cessation
+
+   21. Sample FAQ document- NCI’s Office of Budget and Finance
+
+   22. Additional materials and information identified by the Government.
+
+ATTACHMENT 8 – CONTACT
+CENTER REFERENCE MATERIALS                   Page 17 of 17                       May 8, 2024
+

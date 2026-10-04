@@ -1,0 +1,656 @@
+                          ATTACHMENT 3 - STATEMENT OF WORK
+Independently and not as an agent of the Government, the Contractor shall furnish all the necessary
+services, personnel, materials, equipment, and facilities, not otherwise provided by the Government, to
+perform the Statement of Work.
+
+Scope
+
+The Contractor shall operate the National Cancer Institute’s (NCI) Contact Center, also known as NCI’s
+Cancer Information Service (CIS), by responding to inquiries on behalf of NCI, an essential part of NCI’s
+cancer education and information efforts. The Contractor shall provide scientifically based, unbiased
+information to patients, their families and friends; physicians, and other health professionals and the
+public about all aspects of cancer. The type of information includes cancer research and clinical trials,
+cancer prevention, risk factors, symptoms, early detection, diagnosis, treatment, living with cancer,
+survivorship, and tobacco and cessation counseling. The Contractor shall also provide information about
+NCI programs/grants to researchers/investigators and specialists to address first tier questions of the
+research community. The Contractor shall provide and manage a bilingual (English and Spanish) omni-
+channel Contact Center in support of the following scope of work:
+
+        •   Cancer information and case management along the cancer continuum.
+        •   Clinical trials information, education, recruitment, and case management.
+        •   Nicotine and tobacco cessation counseling, information, and case management.
+        •   Information about NCI and its Divisions, Offices, and Centers (DOCs), programs, priorities,
+            and activities.
+
+The Contractor shall use NCI materials and Government-selected sources of information to respond to
+inquiries in both English and Spanish, including pre-approved non-NCI resources (textbooks, research
+publications, and Web sites). The Contractor shall deliver services via:
+
+    Toll-free numbers:
+
+        •   1-800-4-CANCER (Cancer information)
+        •   1-877-44U-QUIT (Tobacco cessation information)
+        •   1-800-QUIT-NOW and 1-855- DEJELO-YA (Tobacco cessation information- Department of
+            Health and Human Services (DHHS) National Portal Numbers)
+        •   1-855-QUIT-VET (Tobacco cessation information- Veteran’s Administration)
+        •   1-888-624-1937 (Center for Cancer Research (CCR) Patient Referral Line)
+
+    Additional Access Channels:
+       • LiveHelp, online chat service (reactive and proactive sessions)
+       • E-mail
+       • NCI Enterprise Social Media Accounts, such as Facebook, X, Instagram, YouTube
+       • U.S. Postal Mail
+       • Voicemail boxes for low volume queues and during operational closures (see hours of
+            operation)
+       • Interactive Voice Response (IVR) Message Library
+       • National Organizations that Offer Support Services Database
+ATTACHMENT 3 –
+STATEMENT OF WORK                              Page 1 of 14                                  May 14, 2024
+      Access channels and/or program services may be refocused/expanded based upon the
+      availability of new technologies, Federal Agency Partnerships, or evolving needs of NCI and its
+      stakeholders. This may include, but is not limited to, implementing chat bots, offering text
+      message responses, video calling, mobile apps, portals to support patient engagement in cancer
+      research studies, and/or the provision of additional language/translation services.
+
+     Hours of operation:
+      1. Telephone Service: 9:00 a.m. – 9:00 p.m. Eastern Time, Monday – Friday
+      2. LiveHelp Service: 9:00 a.m. – 9:00 p.m. Eastern Time, Monday – Friday
+      3. Automated Interactive Voice Response (IVR) and Voicemail support during Overnight Hours,
+         Weekends, and Government Holidays. During overnight hours, weekends, and holidays, the
+         Contact Center shall post a recorded message that the center is closed. The message shall
+         include:
+             a. The operating hours of the Contact Center and a welcoming message asking callers to
+                 call back to the Contact Center during normal business hours; and,
+             b. The web address of the NCI website and NCI email / Social Media addresses.
+
+          Hours of operation will be aligned with customer needs and are subject to change and may
+          include emergency operations depending upon the needs of the Government.
+
+    Government Holidays: The following Government holidays are normally observed by Government
+    personnel, http://www.opm.gov/policy-data-oversight/snow-dismissal-procedures/federal-
+    holidays.
+
+      •    New Year’s Day
+      •    Birthday of Martin Luther King, Jr.
+      •    Washington’s Birthday/President’s Day
+      •    Memorial Day
+      •    Juneteenth
+      •    Independence Day
+      •    Labor Day
+      •    Columbus Day
+      •    Veterans Day
+      •    Thanksgiving Day
+      •    Christmas Day
+      •    Any other day designated by Federal Statute, Executive Order, and/or Presidential
+           Proclamation
+
+     Audiences:
+      • Cancer patients.
+      • Tobacco users.
+      • Friends and family, and the public.
+      • Medical professionals, healthcare providers and cancer researchers.
+      • NCI Divisions, Centers, Offices (DOCs) and program staff.
+
+
+
+ATTACHMENT 3 –
+STATEMENT OF WORK                            Page 2 of 14                                 May 14, 2024
+     Service area:
+     United States, U.S. Virgin Islands, Puerto Rico, U.S. Associated Pacific Territories (American Samoa,
+     Guam, and the Northern Mariana Islands).
+
+Due to Privacy Act and IT security concerns, the Contractor’s business and staff proposed for this
+contract must reside within the United States.
+
+The Contractor shall create a customer experience designed to meet or exceed the needs and
+expectations of its customers. To this end, the Contractor shall meet quality assurance standards,
+identified in Tasks 1, 2 and 3, for:
+    • service access.
+    • service quality.
+    • customer satisfaction.
+
+The Contractor shall also address such topics as customer effort, end-to-end customer experience with
+NCI products and services, and post-interaction experience and resolution.
+
+
+Task 1: Customer Experience
+
+
+The Contractor shall:
+1. Develop and implement an optimal customer experience strategy which includes strategies for
+    engagement and collaboration, listening and learning, and alignment to customer needs, including
+    the needs of minority and underserved populations.
+2. Provide first-level triage (commonly referred to as Tier 1 support- the initial support level
+    responsible for basic customer issues) to NCI Divisions, Offices, and Centers (DOCs), as requested,
+    including NCI’s programs such as the Childhood Cancer Data Initiative, CCR and others.
+3. Demonstrate knowledge and understanding of underserved communities and minority researchers’
+    needs and connect them with appropriate program staff/resources such as NCI/NIH programs,
+    training/funding opportunities, and any other relevant information.
+4. Use NCI-furnished systems and tools to conduct quality assurance that emphasize the importance of
+    scientifically accurate and relevant information delivery.
+5. Establish a quality assurance process that ensures compliance with quality assurance standards and
+    follows NCI’s rubric guidelines. The quality assurance process shall include:
+    • quality monitoring of contacts (all Information specialists, all channels),
+    • accurate data collection,
+    • provision of individual performance feedback and reports to Information Specialists,
+    • coaching of Information Specialists,
+    • coaching and training of Supervisors,
+    • revised training and hiring practices based on results of monitoring, and
+    • regular process improvements
+6. Provide planning and support to cancer patients who need assistance locating services in the event
+    of natural disaster.
+
+
+
+ATTACHMENT 3 –
+STATEMENT OF WORK                              Page 3 of 14                                   May 14, 2024
+7. Notify the Contracting Officer’s Representative (COR) and implement a remediation plan upon
+    request if the Contractor does not meet the agreed quality assurance level and/or service level
+    agreements (SLAs) on all access channels.
+8. Identify deficiencies in performance and develop and implement Performance Improvement Plans;
+    provide plans to the Government quarterly.
+9. Ensure understanding of quality standards and application of accurate, consistent scoring in contact
+    evaluations.
+10. Ensure that individual coaching sessions for performance improvement and professional
+    development are implemented.
+11. Implement NCI customer satisfaction surveys per Government instructions. If the survey does not
+    meet or exceed 86 for the American Customer Satisfaction Index Survey (ACSI), the Contractor shall
+    notify the COR and implement a remediation plan.
+12. Participate in monthly calibration sessions with the NCI to ensure consistency and accuracy in
+    evaluation.
+
+Task 2: Provide customer-centric cancer and clinical trials information and other types of cancer
+research study information
+
+The Contractor shall provide accurate, up-to-date, and reliable cancer information that is easy to
+understand. Information Specialists shall provide personalized responses to a broad range of questions,
+including cancer research and clinical trials, including case management for clinical trials, how to find
+cancer treatment centers, cancer prevention, risk factors, symptoms, early detection, diagnosis, and
+treatment, living with cancer, tissue/ biospecimen donation, and survivorship.
+
+The Contractor shall provide tailored, customer-centric service. Inquiries from customers may be highly
+complex and sensitive in nature. In addition to providing information via voice and existing digital
+channels, the Contractor shall also send printed NCI materials and publications to customers, as
+appropriate. Information Specialists shall provide information about and facilitate recruitment to NCI
+intramural and NCI-supported clinical trials. Information Specialists shall additionally provide
+information about and facilitate recruitment to other types of NCI studies for which patients may have
+an opportunity to participate, for example prevention, biospecimens, epidemiological, genetics, and/or
+health behavior change studies. Proactive contacts may be made to the public, depending on specific
+program priority areas and special initiatives as directed by the Government.
+
+The Contractor shall:
+1. Provide telephone, e-mail, LiveHelp, social media, postal mail inquiry responses, and clinical trials
+    searches, in English and Spanish, based on NCI approved handling procedures, Center for Cancer
+    Research (CCR) protocols, and other tools and resources.
+2. Provide telephone and e-mail follow up for patients calling for cancer support, particularly for side
+    effects and symptom management.
+3. Provide clinical trials support and follow up, including prevention and treatment studies, as well as
+    support in the recruitment of trial participants.
+4. Provide first-level triage (Tier 1 support) for services provided by other Federal Agencies.
+5. Notify the COR and implement a remediation plan upon request if the Contractor does not meet the
+    agreed quality assurance level and/or service level agreements (SLAs) on all access channels.
+6. Provide responses to all emails within 4 business days.
+7. Provide responses to all Enterprise social media responses within 1 business day.
+ATTACHMENT 3 –
+STATEMENT OF WORK                              Page 4 of 14                                  May 14, 2024
+8. Ensure approved non-NCI resources are available and up to date, accessible to Contact Center staff,
+    and are in sufficient quantities.
+9. Develop and implement procedures for updating and maintaining cancer and clinical trials
+    information contained in the Recorded Interactive Voice Response (IVR) message library in
+    accordance with approved NCI materials.
+10. Manage cancer, clinical trials, and other cancer research study content, talking points, and standard
+    language in the NCI Contact Center knowledge-management system.
+11. Provide information in a professional manner and ensure that customers’ questions are answered
+    accurately and completely in accordance with approved NCI materials.
+12. Provide cancer and clinical trials content review for NCI materials as requested by the Government,
+    including the National Organizations that offer a Support Services Database.
+13. Develop and implement procedures for handling and escalation of inquiries within Contact Center
+    and to NCI staff as appropriate based on complexity of information, subject matter, or caller
+    behavior (for example, handling suicidal customers); and
+14. Participate, as needed, in promotional activities, including providing images, audio, etc. that depict
+    CIS activities.
+
+Task 3: Provide nicotine/tobacco information and counseling
+
+CIS provides nicotine and tobacco information and resources to users seeking to quit smoking or stay
+quit, as well as to reduce the burden of nicotine and tobacco products. The Contractor shall provide
+tailored, customer-centric service. Nicotine and tobacco cessation information inquiries from customers
+may be highly complex and sensitive in nature. In addition to providing information via voice and
+existing digital channels, the Contractor shall also send printed NCI materials and publications to
+customers, as appropriate. Proactive contacts may be made to the public, depending on specific
+program priority areas and special initiatives as directed by the Government.
+
+The Contractor shall:
+1. Provide telephone, e-mail, LiveHelp (through cancer.gov and Smokefree.gov), social media, and
+    postal mail inquiry responses, in English and Spanish based on NCI approved handling procedures
+    and other tools and resources.
+2. Notify the COR and implement a remediation plan if the Contractor does not meet the agreed
+    service levels.
+3. Provide responses to all emails within 4 business days.
+4. Provide responses to all Enterprise social media responses within 1 business day.
+5. Ensure approved non-NCI resources (publications, webpages, textbooks, and/or other reference
+    materials previously reviewed and approved by the Government) are available and up to date,
+    accessible to Contact Center staff, and are in sufficient quantities.
+6. Develop and implement procedures for updating and maintaining information contained in the
+    Recorded Interactive Voice Response (IVR) message library in accordance with approved NCI
+    materials.
+7. Manage nicotine and tobacco cessation content, talking points, and standard language in the
+    Contact Center knowledge-management system.
+8. Provide information in a professional manner and ensure that customers’ questions are answered
+    accurately and completely in accordance with approved NCI materials.
+9. Provide nicotine and tobacco cessation content review for Smokefree.gov and other NCI materials
+    as requested by the Government.
+
+ATTACHMENT 3 –
+STATEMENT OF WORK                              Page 5 of 14                                   May 14, 2024
+10. Develop and implement procedures for handling and escalation of inquiries to Contact Center and
+    NCI staff as needed based on complexity of information, subject matter, or caller behavior (for
+    example, handling suicidal customers); and
+11. Participate, as needed, in promotional activities, including providing images, audio, etc. that depict
+    CIS activities.
+
+Task 4: Training
+
+The Contractor is responsible for the development, implementation, and evaluation of training for NCI
+Contact Center staff. The Government will provide existing NCI-approved initial training modules at the
+start of the contract. Development of new training modules and updating of existing modules shall be
+the responsibility of the Contractor. NCI will review materials annually. Training typically should not
+affect normal Contact Center operations, though exceptions for closures can be made after consulting
+with the NCI program staff as appropriate.
+
+Changes to NCI programs and/or priorities may require the Contractor to conduct additional training
+and feedback sessions to address the Government’s requirements and concerns. These sessions are to
+be provided only in response to the Government’s request and are not part of the Contractor’s normal
+training program.
+
+In consultation with NCI the Contractor shall:
+1. Manage training of all Information Specialists to enhance knowledge and build skills.
+2. Implement skills-based training as needs are identified in the CIS.
+3. Ensure that the training program reflects the needs of the customers and the Government.
+4. Incorporate Contact Center policies and procedures into the training program.
+5. Submit annual training plans for the CIS, including plans for Spanish-language training, to the NCI
+    COR.
+6. Review and update all Initial Training modules annually, on a schedule determined by the COR.
+7. Develop new Initial Training modules and continuing education modules, in consultation with the
+    NCI COR; and,
+8. Participate in additional NCI conducted trainings, as directed.
+
+Task 5: Ownership of Data/Materials
+
+During the performance of these tasks, the Contractor shall create and maintain trainings and other
+materials used to support the operations of the Contact Center (e.g., knowledge base entries, standard
+responses, business rules, quality tools, and other standard operating procedures).
+
+The Contractor shall:
+1. Provide a copy of such trainings, information, and materials for review and approval by the COR.
+2. Upon request, furnish the required information in electronic format within ten business days of
+    written notification by the COR and.
+3. Not release, publish, share, or use data or other information collected under this contract with other
+    Government agencies, organizations, companies, or individuals without the express written
+    authorization from the COR.
+
+Task 6: Pilot Projects
+
+ATTACHMENT 3 –
+STATEMENT OF WORK                               Page 6 of 14                                   May 14, 2024
+The Contractor shall collaborate with NCI Divisions, Offices, and Centers (DOCs) to support NCI-directed
+pilot projects.
+
+Pilot projects may involve but are not limited to:
+1. New technology to be used in the Contact Center.
+2. New approaches to clinical trial recruitment.
+3. New NCI content in a variety of formats.
+4. New NCI web sites, programs, and/or tools.
+5. New clinical trials search forms.
+6. Reaching target populations.
+7. Scientific or training exchanges.
+8. Expansion of services into prevention topics that have shown a direct relationship to cancer, ex.
+    alcohol, obesity.
+9. Working with intramural and extramural researchers who wish to include the Contact Center within
+    the funded research; and
+10. New approaches to recruitment for non-clinical trial cancer research studies.
+
+The Contractor shall:
+1. Participate in up to 3 pilot projects per year.
+2. Ensure that pilot projects do not interfere with tasks and services provided to the public.
+3. Ensure incorporation of human centered design methods and principles.
+4. Ensure that Contact Center staff are informed of pending pilot projects, and implement appropriate
+    staffing and training needs as required; and
+5. Facilitate the implementation of pilot project results into Contact Center operations as directed by
+    the Government.
+
+Task 7: Strategic Outreach
+
+Strategic outreach helps to advance the mission of NCI and leverage services offered through the NCI
+Contact Center. In consultation with the COR, the Contractor shall work collaboratively to review
+existing communications plans and develop a working document that outlines strategic outreach
+opportunities that advance the work of the NCI’s Contact Center, including engagement strategies and
+evaluation measures to assess progress.
+
+The Contractor shall:
+1. On a yearly basis, develop a strategic outreach plan that outlines specific objectives/targets for the
+    upcoming year; strategies and tactics for meeting objectives; and evaluation metrics. Outreach
+    activities considered as part of the plan should include Federal Agencies, national and health
+    professional groups, national grassroots organizations, and non-Government organizations that
+    align with NCI’s mission. The plan should consider NCI’s programs and priorities, with an emphasis
+    on NCI designated Cancer Centers, National Clinical Trials Network, and NCI Community Oncology
+    Research Program.
+2. Support the implementation of the strategic outreach plan, once finalized, and approved, including
+    ongoing strategic counsel, relationship building, project/pilot planning as needed, and coordination.
+3. Conceptualize and implement an evaluation approach that qualitatively and quantitatively measures
+    the effectiveness of the outreach efforts. Contractor shall develop evaluation criteria and data
+    collection plans prior to initiating strategic outreach activities. A comprehensive assessment will be
+    provided on an annual basis, which must include, at a minimum, a data analysis, implications, and
+ATTACHMENT 3 –
+STATEMENT OF WORK                              Page 7 of 14                                  May 14, 2024
+   recommendations for strategy refinement.
+4. In consultation with the Government, additional strategic outreach plans may be developed for
+   specific pilot projects or NCI driven communication efforts that impact the NCI CIS.
+
+Task 8: Management
+
+The Contractor shall manage personnel, financial, communications, and material resources to ensure
+that all contract requirements are satisfied, and a high-quality, innovative service is provided to the
+public. The Contractor shall ensure that program objectives and quality assurance standards are clearly
+communicated and strictly enforced.
+
+A. Benchmarking
+Rapid changes in technology and information seeking behavior directly impact the services delivered by
+the NCI Contact Center. Continuous investigation into changing industry practices, technology solutions
+and customer behaviors are crucial to delivering state-of-the-art, agile, customer-centric services.
+
+The Contractor shall:
+1. Demonstrate and institute program enhancements and use of innovative technology solutions that
+    serve to refine operations, increase efficiency, and reduce costs.
+2. Monitor, routinely report on, and make recommendations around Contact Center industry trends,
+    including emerging standards, tools, and new technologies, to keep abreast of the latest and most
+    effective technologies that serve to optimize efficiency and effectiveness of Contact Center
+    operations.
+3. Analyze customer data and potential target audiences to assess the most effective communications
+    channels, with a particular eye toward underserved populations.
+4. Analyze and use contemporary data visualization tools to gain insights from target audiences to
+    ensure the most effective communication channels are activated; and,
+5. Work closely with NCI’s Office of Communication and Public Liaison (OCPL) to assure optimal
+    integration of Contact Center operations with NCI/OCPL business lines.
+
+B. Workforce Management
+The Contractor is responsible for hiring and training staff for all contract requirements including
+coverage for all access channels and scheduling staff to meet service demands while meeting quality
+assurance standards. The Contractor shall use a workforce management (WFM) system furnished by the
+Government. This system will ensure the Government’s ability to balance CIS growth and operating
+costs by forecasting schedules and workloads for all access channels.
+
+The Contractor shall:
+1. Forecast volume of customer contacts over all channels and use the forecasts to create schedules
+    that will efficiently meet customer access throughout the day and will be adjusted based on volume.
+2. Monitor the call management system and other systems that indicate the real-time flow of inquiries
+    on each access channel and to meet real-time service needs, updating the workforce management
+    system as necessary.
+3. Monitor contact volume data to anticipate and adjust staffing needs and guarantee consistent,
+    efficient operation of the Contact Center.
+4. Submit a quarterly staff census report; and,
+5. Anticipate media events that may increase volume and provide scalability options to meet increased
+    demand.
+ATTACHMENT 3 –
+STATEMENT OF WORK                             Page 8 of 14                                  May 14, 2024
+C. Communications
+The Contractor shall maintain communications with the COR to apprise NCI of changes in staffing levels
+and any issues that affect the Contractor’s ability to provide contracted services. The Contractor shall
+implement procedures for communicating to the Government the primary point of contact and/or
+designated key personnel for disaster-related issues, including power outages and inclement weather
+and other unforeseen events that inhibit Contact Center operations. Such procedures shall include an
+escalation process defining various stages of issue severity and the notification level appropriate to
+each. These procedures shall be included in the Continuity of Operations/Disaster Recovery Plan.
+
+The Government shall provide regular opportunities for the Contractor to communicate with the NCI
+COR, such as conference calls, site visits, and meetings. The Contractor shall participate in all such
+scheduled meetings and conference calls. Contractor management practices shall include proactive
+consultation and communication with the NCI COR to address any issues affecting the successful
+operation of the contract and the Contractor shall alert NCI to urgent situations. The Contractor shall
+develop innovative approaches to the work and implementation of operational efficiencies. The Contact
+Center shall communicate regularly with NCI in support of ongoing contract tasks, including semi-annual
+presentations to members of OCPL Leadership. In addition, the Contractor shall provide communications
+helpful to the Government and to NCI Divisions, Offices, and Centers (DOCs).
+
+Communication to the Government may include, but are not limited to informing NCI about:
+1. Potential topics or content for new publications, fact sheets, and/or Frequently Asked Questions
+   based on customers’ needs.
+2. Feedback on current cancer content to improve NCI’s web offerings.
+3. The public’s perspective and how the public’s needs may inform NCI’s websites, publications, and
+   materials (in English and Spanish).
+4. Emerging topics (cancer-specific or programmatic) that require additional Contact Center staff
+   training.
+5. Trends in information seeking by cancer patients, their families, and the public.
+6. NCI’s Web site improvements and/or problems.
+7. Systems enhancements and/or problems; and,
+8. Listen and learn sessions.
+
+D. Information Analysis
+CIS activities shall be data-driven – data collected is integrated into planning and delivery of services.
+The Contractor shall use multiple data sets and systems to operate and manage the Contact Center. The
+systems currently in use, furnished by the Government, include, but are not limited to:
+1. Workforce Management System
+2. Customer Relationship Management System
+3. Call Recording and Quality Reporting System
+
+Managers shall be familiar with all the data sources and use them to inform management decisions at
+the highest levels. Supervisors shall use these data sources to supervise staff and perform other
+supervisory functions.
+
+ATTACHMENT 3 –
+STATEMENT OF WORK                              Page 9 of 14                                   May 14, 2024
+Task 9: Data Collection, Reporting and Analysis
+
+The Contractor shall:
+1. Collect and report data on every customer interaction; routinely and on an ad-hoc basis.
+2. Collect and report data in support of contract activities, for NCI-directed pilot projects (see Task 6)
+    and media promotions.
+3. Facilitate qualitative data collection on a schedule to be determined by NCI staff.
+4. Collect data using only NCI-approved data collection tools and systems.
+5. Complete Electronic Contact Record Form (ECRF) and/or Smoking Cessation Intake Form (SCIF) for
+    each contact at the time of the inquiry. These data records shall capture information about the
+    nature of the inquiry, primary resources used, response provided, and demographic and customer
+    service information, including brief customer satisfaction questions.
+6. Ensure the accuracy, reliability, and completeness of data through established quality assurance
+    processes as follows:
+        a.     Data Collection Training - All Contact Center staff shall be trained in the proper data
+               collection processes and in the use of approved data collection tools. In addition to the
+               initial training on data collection, Contact Center staff shall be trained to collect data for
+               specific health communication projects, as directed by the COR.
+        b.     Regulations and Policies/Procedures -The Contractor shall collect and maintain data only
+               after all study approvals have been obtained, including the Office of Management and
+               Budget (OMB). Contact Center staff shall undertake data collection activities in
+               accordance with Contact Center Policies and Procedures to ensure customers are not
+               exposed to any unnecessary reporting burden.
+7. Provide ad-hoc analysis on trends in collected data; and,
+8. Provide ad-hoc reports for NCI Divisions, Offices, and Centers (DOCs) to inform program planning
+    efforts and provide impact analysis of large-scale multi-site NCI supported clinical trials.
+
+Task 10: IT and Telecommunications
+
+Separate from this contract, the Government has procured quality assurance tools (CRM, Calabrio
+Quality, or similar, and Workforce Management) that will be provided to the NCI Contact Center. The
+Contractor is required to provide systems compatible to access the Government’s applications used in
+operation of the Contact Center including:
+
+        •   Microsoft Windows 10 and all security updates.
+        •   Supported Browsers (Edge, Chrome, Firefox, Safari) and all security updates.
+        •   and Microsoft Office 2010, complete with all security upgrades.
+
+Any future upgrades of computers and/or software shall be the Contractor’s responsibility. The
+Contractor shall use applications, software, and databases specified by the Government.
+
+The Contractor shall:
+1. Provide all Contact Center staff appropriate resources and training to ensure optimal operation and
+    efficiency for all specified systems and databases (those currently used and to be implemented
+    throughout the life of the contract).
+2. Provide Internet access and network connectivity with sufficient capacity to support Contact Center
+    operations and integrated telephone/internet system, as well as the ability to support operations in
+    real time.
+
+ATTACHMENT 3 –
+STATEMENT OF WORK                               Page 10 of 14                                      May 2, 2024
+3. Provide and maintain a System/Data Security Plan that includes security at the desktop as indicated
+   in the applicable Article included in Section H.
+4. Work in partnership with IT and Telecommunications Systems providers selected by the
+   Government to ensure optimal Contact Center operations; and
+5. Follow the HHS Enterprise Performance Life Cycle (EPLC) framework and methodology. Information
+   about the EPLC policy and framework is currently available at:
+   https://www.hhs.gov/web/governance/digital-strategy/it-policy-archive/policy-for-information-
+   technology-enterprise-performance.html and http://www.hhs.gov/ocio/eplc-lifecycle-
+   framework.pdf.
+
+A. Telecommunications
+The Contractor shall:
+1. Use Government-furnished telecommunications equipment, systems, and software.
+2. Work with the Government and other service providers to ensure that all telecommunications
+    equipment required to support the contract is fully operational within 30 days of contract award.
+3. In the case of equipment failure, coordinate with NCI Contact Center Systems Administrator staff
+    and provide immediate local telecommunications and information technology (IT) support to
+    alleviate any downtime of operations; and
+4. Adhere to all Contact Center policies and procedures related to telecommunications.
+
+B. Telecommunications Security
+The Contractor shall be responsible for telecommunications security to protect all incoming and
+outgoing calls from unauthorized access and use. This responsibility includes physical security of
+telecommunications equipment and security of the data collected from telecommunications activities.
+
+C. Continuity of Operations/Disaster Recovery Plan (COOP/DR)
+In the context of Continuity of Operations, a “disruption” is defined as an unplanned event that causes
+the general system or major application to be inoperable (e.g., minor, or extended power outage,
+extended unavailable network, or equipment or facility damage or destruction). A “disaster” is defined
+as a major unplanned event that may cause longer term disruption and/or complete closure of service.
+A disaster may include a hurricane, tornado, flood, major fire destroying the Contractor’s facility, or a
+public health emergency, such as a pandemic.
+
+The Contractor shall:
+1. Develop and implement a Continuity of Operations/Disaster Recovery Plan for disruptions in service
+    and major disasters. The plan shall include procedures addressing continuity of operations in the
+    event of a disruption of service caused by the Contractor which results in a shutdown or lapse in
+    service for any reason. The Contractor shall minimize service disruption to the Government and the
+    public. Outages that are not caused by a major disaster may include system failure, or local network
+    outage at the Contractor facility. The Contractor shall have plans and procedures in place for these
+    circumstances that shall ensure that all attended and unattended services are restored to pre-
+    outage performance levels within 4 hours after initial discovery of the outage.
+2. Test the Continuity of Operations/Disaster Recovery plan on an annual basis; and,
+3. The COOP/DR plan requires review and approval by the Government if changes are needed based
+    on results from the annual testing. Changes shall be submitted no later than 30 days after annual
+    review; the Government will review within 30 days of receipt.
+
+Task 11: Security
+
+ATTACHMENT 3 –
+STATEMENT OF WORK                             Page 11 of 14                                    May 2, 2024
+A. Facilities and Systems
+The Contractor shall be responsible for assuring the security of any facilities used to conduct the work of
+the contract and the security of all Government-furnished equipment and systems. The Contractor shall
+provide a physically secure facility for people, equipment, and documentation. All security requirements
+apply to the Contractor facility, alternative facility, or any subcontractor facilities. When designing
+physical security measures, the Contractor shall address factors including, but not limited to:
+1. Controlled Access - In general, facility access shall be limited to: Contractor personnel performing
+    work; maintenance personnel or suppliers performing upkeep or repair of facilities or equipment;
+    and customers on the site on official business.
+2. Data Center - Access to the NCI CIS data center shall be physically secured, with entrance granted
+    only to those requiring access to this area on a regular basis to perform their normal job functions or
+    who are escorted, as in the case of visitors or housekeeping staff. Secure data includes, but is not
+    limited to, Contact Center data and audio files from NCI’s quality assurance program.
+3. Confidentiality and Data Security - To maintain the confidentiality of Contact Center customers, the
+    Contractor shall adhere to data security requirements of the contract and destroy all personally
+    identifiable information on a schedule provided by the NCI.
+4. Systems Security, Operations and Maintenance – The Contractor shall work with the Government to
+    ensure efficient operations of the Contact Center by notifying the Government of any service
+    outages in telephone or internet access.
+
+The Contractor shall:
+1. Adhere to all DHHS and NIH regulations and guidelines regarding systems security for remote access
+    to Government applications and databases. This includes completion of information security training
+    and personnel clearance for access.
+2. Adhere to program policies and procedures for access to services.
+3. Report up-time and availability of each access channel, including Internet access issues at the
+    Contractor’s location; and,
+4. Inform NCI as soon as possible if/when operations must be suspended due to storms, power
+    failures, or other incidents interfering with access to facilities.
+
+Task 12: Transition Planning
+
+All materials and data (most current versions) created and collected during performance and owned by
+the Government shall be turned over in a timely manner.
+
+The Contractor shall:
+1. Revise the draft transition-in plan submitted with the proposal and submit a final transition-in plan
+    within 7 days of contract award. The plan shall include a technical and management approach that is
+    clear and complete including the timeline and resources required to commence Contact Center
+    operations. The transition-in plan shall detail the planned transition methodology in logical
+    sequence to ensure a smooth transition of all tasks and/or subtasks of the NCI Contact Center
+    without interruption or degradation of service levels provided by the incumbent Contractor. The
+    final transition-in plan shall be approved by the COR and followed to ensure an orderly, secure,
+    efficient, and expedient transition of all contract activities by the end of the agreed upon contract
+    transition period.
+2. Develop and submit a draft plan 120 days prior to the contract expiration date and a draft final
+    transition-out plan 90 days prior to contract expiration. The plan shall include a technical and
+
+ATTACHMENT 3 –
+STATEMENT OF WORK                              Page 12 of 14                                   May 2, 2024
+     management transition approach that is clear and complete, including the timeline and resources
+     required for the transition. The Transition-out Plan shall detail the planned transition methodology
+     in logical sequence to ensure a smooth transition of all tasks and/or subtasks of the NCI Contact
+     Center without interruption or degradation of service levels. The plan shall include an approach that
+     ensures successful achievement while limiting impact to existing programs and/or projects. The
+     draft final transition-out plan shall be revised, as needed, and will become the final transition-out
+     plan upon approval of the COR. The approved final transition-out plan shall be followed to ensure an
+     orderly, secure, efficient, and expedient transition of all contract activities by the contract
+     completion date.
+3.   Participate in meetings and/or telephone conversations required by the Government in which
+     procedures and activities are discussed and delineated.
+4.   Provide NCI, at any point during and at the conclusion of the contract, access to or copies of data
+     and materials created, captured, or stored which support the services of this contract.
+5.   Deliver in accordance with the transition plan: all materials, data, documentation, and software
+     used and developed to support contract activities; and,
+6.   Prepare all the items noted in this section for electronic transfer, mailing or shipping to the
+     successor Contractor(s) and/or the Government as directed by the Government. As applicable, all
+     items must be packed in new boxes of uniform size, clearly labeled with contents and a unique
+     number along with an inventory showing contents of each box and placed on a loading dock for
+     pickup by the new Contractor or designated agent in accordance with the delivery schedule.
+     Electronic files shall be sent in a format specified by the Government.
+
+Options for Additional Services
+
+Options for U.S. Department of Veterans Affairs (VA) Quitline Services
+
+To expand NCI tobacco telephone quitline services to Veterans enrolled for care at VA and to assist in
+increasing capacity and training to meet increased demand from Veterans.
+
+The Contractor shall:
+1. Provide Veterans access to established NCI quitline services as defined by the VA quitline services
+    protocol, including handling reactive calls, e-referrals, SmokefreeVET text referrals, warm transfers,
+    proactive callbacks, and outcome follow-up assessments.
+2. Expand quitline services for Veteran callers as needed.
+3. Provide training to the Tobacco Cessation Counselors on Veteran-specific issues, concerns and in the
+    use of VHA resources within 60 days of award. This training shall provide a brief overview of the
+    organization of health care in the VHA as well as background information about the characteristics
+    of the Veteran populations in care in VHA to tailor the smoking cessation quit line messages to meet
+    Veterans’ needs. Additional trainings shall be performed on an ad hoc basis based on programmatic
+    needs and Government policies.
+4. Provide a proactive callback service, within one to two weeks following the determination of the
+    quit date, with a maximum of 4 callbacks for each quit attempt. The callback dates shall be guided
+    by the Veteran. Up to an additional 4 callbacks may be provided to the Veteran if additional support
+    is requested.
+5. Collaborate on NCI-directed pilot projects (See Task 6).
+6. Conduct ongoing assessment of VA quitline outcomes through follow-up phone surveys (4 month, 7
+    months, 13 months) and reengage customers, as defined by the VA quitline services protocol, who
+    may have relapsed.
+
+ATTACHMENT 3 –
+STATEMENT OF WORK                              Page 13 of 14                                  May 2, 2024
+7. Record keeping and quality assurance of Veteran calls to quitline as outlined by NCI Contact Center
+   standards and practices; and,
+8. Work in partnership with the NCI and VA to address any additional IT and/or security needs required
+   from changes in the VA quitline services protocol and/or implementation of VA specific pilot
+   projects.
+
+
+
+
+ATTACHMENT 3 –
+STATEMENT OF WORK                           Page 14 of 14                                  May 2, 2024
+

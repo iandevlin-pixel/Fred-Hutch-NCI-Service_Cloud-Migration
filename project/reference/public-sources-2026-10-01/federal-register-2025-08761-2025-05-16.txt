@@ -1,0 +1,102 @@
+Source: https://www.govinfo.gov/content/pkg/FR-2025-05-16/html/2025-08761.htm
+Retrieved: 2026-10-01
+
+Federal Register, Volume 90 Issue 94 (Friday, May 16, 2025)
+[Federal Register Volume 90, Number 94 (Friday, May 16, 2025)]
+[Notices]
+[Pages 21055-21056]
+From the Federal Register Online via the Government Publishing Office [ www.gpo.gov ]
+[FR Doc No: 2025-08761]
+-----------------------------------------------------------------------
+DEPARTMENT OF HEALTH AND HUMAN SERVICES
+National Institutes of Health
+Proposed Collection: 30-Day Comment Request; Collection of
+Customer Service, Demographic, and Smoking/Tobacco Use Information From
+the National Cancer Institute's (NCI) Cancer Information Service (CIS)
+AGENCY: National Institutes of Health, Health and Human Services.
+ACTION: Notice.
+-----------------------------------------------------------------------
+SUMMARY: In compliance with the requirement of the Paperwork Reduction
+Act of 1995 to provide an opportunity for public comment on proposed
+data collection projects, the National Institutes of Health, National
+Cancer Institute (NCI) will publish periodic summaries of proposed
+projects to be submitted to the Office of Management and Budget (OMB)
+for review and approval.
+DATES: Comments regarding this information collection are best assured
+of having their full effect if received within 30 days of the date of
+this publication.
+ADDRESSES: Written comments and recommendations for the proposed
+information collection should be sent within 30 days of publication of
+this notice to www.reginfo.gov/public/do/PRAMain . Find this particular
+information collection by selecting ``Currently under 30-day Review--
+Open for Public Comments'' or by using the search function.
+FOR FURTHER INFORMATION CONTACT: To request more information on the
+proposed project or to obtain a copy of the data collection plans and
+instruments, contact Candace Maynard, Branch Chief, Cancer Information
+Service Branch, CISB/OCPL, 9609 Medical Center Drive, Rockville, MD
+20850, or call non-toll-free number 240-276-6657 or email your request,
+including your address to: [email protected] . Formal requests for
+additional plans and instruments must be requested in writing.
+SUPPLEMENTARY INFORMATION: This proposed information collection was
+previously published in the Federal Register on October 7, 2024 (89 FR
+81088) and allowed 60 days for public comment. One public comment was
+received. The purpose of this notice is to allow an additional 30 days
+for public comment. The National Cancer Institute (NCI), National
+Institutes of Health, may not conduct or sponsor, and the respondent is
+not required to respond to, an information collection that has been
+extended, revised, or implemented on or after October 1, 1995, unless
+it displays a currently valid OMB control number.
+In compliance with section 3507(a)(1)(D) of the Paperwork Reduction
+Act of 1995, the National Institutes of Health (NIH) has submitted to
+the Office of Management and Budget (OMB) a request for review and
+approval of the information collection listed below.
+Proposed Collection Title: Collection of Customer Service,
+Demographic, and Smoking/Tobacco use Information from the National
+Cancer Institute's (NCI) Cancer Information Service (CIS), 0925-0208,
+Expiration Date 3/31/2025, REINSTATEMENT WITH CHANGE, National Cancer
+Institute (NCI), National Institutes of Health (NIH).
+Need and Use of Information Collection: The National Cancer
+Institute (NCI) currently collects: (1) customer service and
+demographic information from clients of the Cancer Information Service
+(CIS) to properly plan, implement, and evaluate cancer education
+efforts; (2) smoking/tobacco use behavior of individuals seeking NCI's
+smoking cessation assistance to provide smoking cessation services
+tailored to the individual client's needs and track their smoking
+behavior at follow up. This is a request for OMB to approve a revised
+submission for an additional three years to provide ongoing customer
+service and collection of demographic information from CIS clients for
+the purpose of program planning and evaluation.
+OMB approval is requested for 3 years. There are no costs to
+respondents other than their time. The total estimated annualized
+burden hours are 6,343 hours.
+Estimated Annualized Burden Hours
+----------------------------------------------------------------------------------------------------------------
+Number of Average Total
+Number of responses time per annual
+Form name Category of respondent respondents per response burden
+respondent (in hours) hours
+----------------------------------------------------------------------------------------------------------------
+Demographic & Customer Individuals............ 15,754 1 3/60 788
+Satisfaction Questions (Appendix
+1A or 1AB).
+Live Help Questions (Appendix 1B) Individuals............ 17,589 1 2/60 586
+Smoking Cessation ``Intake'' Individuals............ 8,839 1 6/60 884
+Questions (Appendix 1C).
+Smoking Call Backs (Appendix 1D). Individuals............ 8,840 1 4/60 589
+VA Call Backs (Appendix 1E)...... Individuals............ 26,055 1 4/60 1,737
+Cancer Info Call Backs (Appendix Individuals............ 1,841 1 4/60 123
+1F).
+Email Intake Form (Appendix 2)... Individuals............ 9,740 1 10/60 1,623
+Demographic & Customer Individuals............ 400 1 2/60 13
+Satisfaction Questions (Appendix
+9).
+-----------------------------------------------------
+Totals....................... ....................... ............ 89,058 ........... 6,343
+----------------------------------------------------------------------------------------------------------------
+[[Page 21056]]
+Dated: May 13, 2025.
+Melissa M. Park,
+Project Clearance Liaison, National Cancer Institute, National
+Institutes of Health.
+[FR Doc. 2025-08761 Filed 5-15-25; 8:45 am]
+BILLING CODE 4140-01-P

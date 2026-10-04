@@ -1,0 +1,26 @@
+# List files or directories below to ignore them when running prettier
+# More information: https://prettier.io/docs/en/ignore.html
+#
+
+**/staticresources/**
+.localdevserver
+.sfdx
+.sf
+.vscode
+
+coverage/
+# --- Documentation guard ---
+# This repo is primarily hand-curated markdown with formatting and table
+# layout that is reviewed by the team. lint-staged runs `prettier --write`
+# on staged *.md, which would re-pad tables and normalize list and heading
+# markers, producing large whitespace-only diffs on shared documents.
+# Prettier does not touch these.
+*.md
+CLAUDE.md
+project/
+oracle/
+salesforce/
+migration/
+discovery/
+pm/
+archive/

@@ -1,0 +1,50 @@
+# Project profile for the project-registers skill. Identifiers only, no client data.
+project:
+  name: Fred Hutch NCI CIS Service Center Migration
+  client: Fred Hutch
+  code: FH  # prefixes new database IDs (FH-REQ, FH-DD); the existing RAID Log keeps RAID
+  kicksaw_role: Solution architecture and delivery
+  start: 2026-09-08
+  go_live: null  # open: Go-live date (RAID-16)
+people:  # notion_user resolved against the Notion workspace 2026-09-30; client and partner people have no Notion access
+  - {name: Hannah Oanca, org: Kicksaw, role: Engagement Manager, notion_user: 0ebb1915-dde7-48ed-b623-f46042a43a16}
+  - {name: Avi Rabinovitch, org: Kicksaw, role: Lead Solutions Consultant, notion_user: b50c4b30-da77-4a6a-a1aa-ae21dbad20d4}
+  - {name: Ben Bolding, org: Kicksaw, role: Principal Solution Architect, notion_user: 72291c41-77bf-4c82-b5c9-61539eec6288}
+  - {name: Sarah Tirey, org: Kicksaw, role: Project Manager, notion_user: 022b6283-407b-44e2-bcd7-4f05610b2155}
+  - {name: Ian Devlin, org: Kicksaw, role: Lead Salesforce Administrator, notion_user: fb26bcb5-4e33-40e5-aaac-8875db64b486}
+  - {name: Sahil Kumar, org: Kicksaw, role: VP of Delivery, notion_user: 39cd872b-594c-810b-aec0-0002ac156120}
+  - {name: Kenny Goldman, org: Kicksaw, role: CEO, notion_user: 59afb821-66d4-48df-b789-b46fb15d3107}
+  - {name: Tony McCune, org: Kicksaw, role: GM HLS Practice, notion_user: 29bd872b-594c-81f4-972f-0002a47f109c}
+  - {name: Mike Griffin, org: Fred Hutch, role: Project Manager and Product Owner}
+  - {name: Adrianna Gutierrez, org: Fred Hutch, role: Program Director}
+  - {name: Mark Hubers, org: Fred Hutch, role: Business Application Manager}
+  - {name: Jennifer Macabeo, org: Fred Hutch, role: Systems Administrator}
+  - {name: Holly Fernandez-Johnson, org: Fred Hutch, role: Contact Center Manager}
+  - {name: Reynaldo Quijano, org: Fred Hutch, role: Workforce Manager}
+  - {name: Reetu Ghumman, org: Fred Hutch, role: Budget Analyst}
+  - {name: Suchi Panda, org: Fred Hutch, role: Cloud team manager}
+  - {name: Chris Holman, org: Calabrio, role: Account Executive}
+  - {name: Trevor Holt, org: Calabrio, role: Project Manager}
+  - {name: Ken Daugherty, org: AWS, role: Partner}
+  - {name: Binu Pazhoor, org: AWS, role: Partner}
+reviewer: Ben Bolding  # until Sarah Tirey takes the review on
+sources:
+  notion:
+    audience: internal  # the hub is shared with the Kicksaw Fred Hutch team only; covers every database under it
+    hub: a59d4b877417832abac401ee25d13daa
+    raid_log: 9a2d4b87-7417-83c0-85f2-870b704fa4b0
+    requirements: null
+    design_record: null
+    transcripts: 593d4b87-7417-83f7-bfc8-0789adf965d3
+  jira:
+    site: kicksaw.atlassian.net
+    project: FHCCNSMS
+    audience: client-facing  # labeled by where it is heading: Fred Hutch is meant to work in Jira alongside Kicksaw
+  drive: []
+  other: []
+channels:  # unlisted channels are blocked; #internal_fredhutchinson (C07FFQ7KTC5) is other Fred Hutch work, left out on purpose
+  - {platform: slack, id: C0B7MFZPFHS, name: internal_fredhutchinson_nci, audience: internal}
+values:
+  owner_names: [Hannah Oanca, Avi Rabinovitch, Ben Bolding, Sarah Tirey, Ian Devlin, Sahil Kumar, Kenny Goldman, Tony McCune, Mike Griffin, Adrianna Gutierrez, Mark Hubers, Jennifer Macabeo, Holly Fernandez-Johnson, Reynaldo Quijano, Reetu Ghumman, Suchi Panda, Chris Holman, Trevor Holt, Ken Daugherty, Binu Pazhoor]
+  owner_orgs: [Kicksaw, Fred Hutch, AWS, Calabrio]
+  workstreams: [Scope, Architecture, Security & Compliance, Data Migration, Knowledge, Telephony, WFM/QM, Reporting, Delivery Ops, Commercial]

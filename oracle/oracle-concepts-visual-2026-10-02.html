@@ -1,0 +1,312 @@
+<!doctype html>
+<!-- Published to the Notion Project Library as "How Oracle works, for a Salesforce team", embedded as an HTML file. Kept in sync: this file is the source. After any change, upload it again and replace the embed on that page. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How Oracle works, for a Salesforce team</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Source+Sans+Pro:wght@400;600;700&display=swap">
+<style>
+  :root{--navy:#043056;--cyan:#68D5F8;--blue:#0B70B9;--orange:#DD6443;--smoke:#EFEFEF;--charcoal:#343335;
+        --head:Inter,Arial,sans-serif;--body:"Source Sans Pro",Arial,sans-serif;--ora:#DD6443;--sf:#0B70B9}
+  *{box-sizing:border-box}
+  body{margin:0;background:#FFFFFF;color:var(--charcoal);font-family:var(--body);font-size:16px;line-height:1.5}
+  .wrap{max-width:1240px;margin:0 auto;padding:32px 16px 0}
+  header{display:flex;align-items:center;justify-content:space-between;gap:24px;border-bottom:1px solid var(--smoke);padding-bottom:16px}
+  .logo{height:36px;width:auto}
+  .meta{font-size:14px;text-align:right}
+  h1{font-family:var(--head);font-weight:800;color:var(--navy);font-size:30px;line-height:1.2;margin:24px 0 8px}
+  .lede{font-size:18px;max-width:900px;margin:0 0 8px}
+  h2{font-family:var(--head);font-weight:700;color:var(--navy);font-size:22px;margin:44px 0 6px}
+  h2 .n{display:inline-block;background:var(--navy);color:#fff;border-radius:6px;font-size:14px;padding:2px 9px;margin-right:10px;vertical-align:3px}
+  .sub{margin:0 0 16px;max-width:900px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:20px}
+  .card{background:#F4F7FA;border-left:4px solid var(--blue);border-radius:8px;padding:14px 16px}
+  .card h3{font-family:var(--head);font-weight:700;color:var(--navy);font-size:15px;margin:0 0 6px}
+  .card p{margin:0;font-size:15px}
+  .legend{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;margin:18px 0 0}
+  .legend span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+  .legend .o::before{background:var(--ora)} .legend .s::before{background:var(--sf)} .legend .c::before{background:var(--navy)}
+  .vs{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}
+  .side{border:1px solid #D9DEE4;border-radius:10px;padding:18px;background:#fff;border-top:6px solid var(--navy)}
+  .side.oracle{border-top-color:var(--ora)} .side.sf{border-top-color:var(--sf)}
+  .side>h3{font-family:var(--head);font-size:13px;letter-spacing:.07em;text-transform:uppercase;margin:0 0 14px;color:var(--navy)}
+  .side.oracle>h3{color:#B24A2D} .side.sf>h3{color:var(--sf)}
+  .node{border:2px solid var(--navy);border-radius:8px;padding:10px 12px;background:#fff;font-size:15px}
+  .node b{font-family:var(--head);color:var(--navy);display:block;font-size:15px}
+  .node small{display:block;font-size:13.5px;color:#55585C;margin-top:2px}
+  .node.o{border-color:var(--ora);background:#FDF3F0} .node.s{border-color:var(--sf);background:#EEF6FC}
+  .node.soft{border-style:dashed;background:#FAFBFC}
+  .node.fill{background:var(--navy);border-color:var(--navy);color:#fff} .node.fill b,.node.fill small{color:#fff}
+  .rec{border:2px solid var(--navy);border-radius:8px;overflow:hidden;font-size:14.5px}
+  .rec .t{background:var(--navy);color:#fff;font-family:var(--head);font-weight:700;padding:7px 12px;font-size:14px}
+  .rec .f{display:flex;justify-content:space-between;gap:12px;padding:7px 12px;border-top:1px solid var(--smoke)}
+  .rec .f span:first-child{color:#55585C} .rec .f span:last-child{font-weight:600;color:var(--navy);text-align:right}
+  .rec .f.hl{background:#FFF4D6}
+  .down{text-align:center;font-size:20px;line-height:1;color:var(--navy);margin:8px 0}
+  .down small{display:block;font-size:12.5px;color:#55585C;font-family:var(--body);line-height:1.3}
+  .row{display:flex;gap:10px;align-items:stretch;flex-wrap:wrap} .row>.node{flex:1 1 130px}
+  .flow{display:flex;gap:6px;align-items:stretch;flex-wrap:wrap}
+  .flow>.node{flex:1 1 120px} .flow>.ar{align-self:center;font-size:20px;color:var(--navy);flex:0 0 auto}
+  .hub{display:grid;grid-template-columns:220px 40px 1fr;gap:0;align-items:center}
+  .hub .spokes{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .hub .ar{text-align:center;font-size:22px;color:var(--navy)}
+  .take{background:#EAF6FC;border-radius:8px;padding:12px 16px;margin-top:16px;font-size:15.5px}
+  .take b{color:var(--navy)}
+  .stack{display:flex;flex-direction:column;gap:8px}
+  .layers .node{position:relative;padding-left:44px}
+  .layers .node i{position:absolute;left:10px;top:10px;width:24px;height:24px;border-radius:50%;background:var(--navy);color:#fff;font-style:normal;font-family:var(--head);font-weight:700;font-size:13px;text-align:center;line-height:24px}
+  .tabs{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:8px}
+  .tab{font-size:13px;padding:5px 9px;border-radius:6px 6px 0 0;border:1.5px solid var(--navy);border-bottom:none;background:#fff;color:var(--navy);font-weight:600}
+  .tab.off{border-style:dashed;color:#9AA0A6;border-color:#9AA0A6}
+  .pill{display:inline-block;font-size:12.5px;border-radius:99px;padding:2px 9px;background:var(--smoke);margin:2px 2px 0 0}
+  .tl{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:6px}
+  .tl div{padding:10px 12px;border-top:6px solid var(--blue);font-size:14.5px;border-right:1px solid #fff}
+  .tl div b{display:block;font-family:var(--head);color:var(--navy)}
+  .tl div.x{border-top-color:var(--ora);background:#FDF3F0}
+  .tl div.k{background:#EEF6FC}
+  .tablewrap{overflow-x:auto;border:1px solid var(--smoke);border-radius:8px}
+  table{border-collapse:collapse;width:100%;font-size:14.5px}
+  th{font-family:var(--head);font-weight:700;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--navy);background:#F4F7FA;text-align:left;padding:10px 12px;border-bottom:1px solid #D9DEE4}
+  td{padding:9px 12px;border-bottom:1px solid var(--smoke);vertical-align:top}
+  td:first-child{font-weight:600;color:var(--navy)}
+  footer{margin-top:44px;border-top:1px solid var(--smoke);padding:16px 0 32px;font-size:13px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  @media (max-width:820px){.vs{grid-template-columns:1fr} .hub{grid-template-columns:1fr} .hub .ar{transform:rotate(90deg)} .tl{grid-template-columns:1fr 1fr} h1{font-size:24px} .meta{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><svg class="logo" role="img" aria-label="Kicksaw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 953.2454 297.0587">
+  <g>
+    <g id="type">
+      <path id="type_CompoundPathItem_" data-name="type &lt;CompoundPathItem&gt;" d="M64.5825,154.9909,113.434,120.722c7.6558-6.0153,16.5876,5.6507,8.7495,11.4837L79.3473,162.2821l46.4818,33.7221c7.6558,5.833-1.0937,17.499-8.7495,11.4837L64.5825,169.5734v31.8993c0,9.8432-14.5825,9.8432-14.5825,0V90.2809c0-9.8432,14.5825-9.8432,14.5825,0Z" style="fill: #414142"/>
+      <path id="type_CompoundPathItem_2" data-name="type &lt;CompoundPathItem&gt;" d="M164.1057,93.0152c0,5.833-3.2811,9.114-9.1141,9.114s-9.1141-3.281-9.1141-9.114,3.2811-9.1141,9.1141-9.1141S164.1057,87.1822,164.1057,93.0152ZM147.7,126.7372c0-9.8432,14.5825-9.8432,14.5825,0v74.7355c0,9.8432-14.5825,9.8432-14.5825,0Z" style="fill: #414142"/>
+      <path id="type_CompoundPathItem_3" data-name="type &lt;CompoundPathItem&gt;" d="M250.6866,134.94H206.939c-4.9216,0-7.2912,2.37-7.2912,7.2913v43.7475c0,4.9216,2.37,7.2913,7.2912,7.2913h43.7476c4.9216,0,7.2912-2.37,7.2912-7.2913,0-9.8432,14.5825-9.8432,14.5825,0,0,13.8534-8.02,21.8738-21.8737,21.8738H206.939c-13.8534,0-21.8738-8.02-21.8738-21.8738V142.2312c0-13.8534,8.02-21.8738,21.8738-21.8738h43.7476c13.8533,0,21.8737,8.02,21.8737,21.8738,0,9.8432-14.5825,9.8432-14.5825,0C257.9778,137.31,255.6082,134.94,250.6866,134.94Z" style="fill: #414142"/>
+      <path id="type_CompoundPathItem_4" data-name="type &lt;CompoundPathItem&gt;" d="M306.0981,154.9909,354.95,120.722c7.6558-6.0153,16.5876,5.6507,8.75,11.4837l-42.8361,30.0764,46.4818,33.7221c7.6558,5.833-1.0937,17.499-8.75,11.4837l-52.4971-37.9145v31.8993c0,9.8432-14.5825,9.8432-14.5825,0V90.2809c0-9.8432,14.5825-9.8432,14.5825,0Z" style="fill: #414142"/>
+      <path id="type_CompoundPathItem_5" data-name="type &lt;CompoundPathItem&gt;" d="M400.1541,207.8525c-9.2964,0-16.0408-3.4633-19.6864-10.7546-4.3748-8.5672,8.5672-15.6762,12.9419-7.109,1.276,2.37,3.2811,3.2811,6.7445,3.2811H444.813c4.9216,0,7.2913-2.37,7.2913-7.2913v-9.114c0-4.9216-2.37-7.2913-7.2913-7.2913H400.1541c-13.8534,0-21.8738-8.02-21.8738-21.8738v-5.4684c0-13.8534,8.02-21.8738,21.8738-21.8738H441.35c9.2963,0,16.0407,3.4633,19.6864,10.7546,4.3747,8.5672-8.5673,15.6762-12.942,7.109-1.276-2.37-3.2811-3.2811-6.7444-3.2811H399.4249c-4.9216,0-7.2912,2.37-7.2912,7.2913V147.7c0,4.9216,2.37,7.2913,7.2912,7.2913h44.4767c13.8534,0,21.8738,8.02,21.8738,21.8738v9.114c0,13.8534-8.02,21.8738-21.8738,21.8738Z" style="fill: #414142"/>
+      <path id="type_CompoundPathItem_6" data-name="type &lt;CompoundPathItem&gt;" d="M550.5332,120.3574c13.8534,0,21.8738,8.02,21.8738,21.8738v58.33c0,4.9216-2.37,7.2913-7.2912,7.2913H504.9629c-13.8534,0-21.8738-8.02-21.8738-21.8738v-9.114c0-13.8534,8.02-21.8738,21.8738-21.8738h52.8616v-12.76c0-4.9216-2.37-7.2913-7.2913-7.2913H506.7857c-3.4634,0-5.4685.9114-6.7444,3.2811-4.3748,8.5672-17.3168,1.4582-12.942-7.109,3.6456-7.2913,10.39-10.7546,19.6864-10.7546Zm7.2913,49.216H504.9629c-4.9216,0-7.2913,2.37-7.2913,7.2913v9.114c0,4.9216,2.37,7.2913,7.2913,7.2913h52.8616Z" style="fill: #414142"/>
+      <path id="type_CompoundPathItem_7" data-name="type &lt;CompoundPathItem&gt;" d="M678.4926,183.0622l20.5979-59.0592c3.281-9.2963,17.1344-4.3747,13.6711,4.9216l-27.3423,75.6468c-2.1873,6.5622-11.4837,6.5622-13.8534,0l-20.78-59.4237-20.78,59.4237c-2.1874,6.5622-11.4838,6.5622-13.8534,0L588.81,128.9246c-3.4634-9.2963,10.39-14.2179,13.671-4.9216l20.5979,59.0592,20.78-59.0592c2.37-6.5621,11.666-6.5621,13.8534,0Z" style="fill: #414142"/>
+    </g>
+    <g id="logoMark">
+      <polygon id="logoMark_PathItem_" data-name="logoMark &lt;PathItem&gt;" points="903.245 149.173 833.454 50 697.976 50 833.454 247.059 903.245 149.173" style="fill: #08afe6"/>
+      <polygon id="logoMark_PathItem_2" data-name="logoMark &lt;PathItem&gt;" points="766.399 149.173 833.454 247.059 698.66 247.059 766.399 149.173" style="fill: #0072ba"/>
+      <polygon id="logoMark_PathItem_3" data-name="logoMark &lt;PathItem&gt;" points="903.245 149.173 833.454 50 697.976 50 903.245 149.173" style="fill: #49c8f5"/>
+      <polygon id="logoMark_PathItem_4" data-name="logoMark &lt;PathItem&gt;" points="833.454 247.059 766.399 149.173 750.272 172.477 833.454 247.059" style="fill: #005485"/>
+    </g>
+  </g>
+</svg><div class="meta">Fred Hutch NCI CIS migration<br>As of 2026-10-02</div></header>
+<h1>How Oracle works, for a Salesforce team</h1>
+<p class="lede">Eight pictures of the Oracle ideas that trip up a Salesforce reader, each next to its Salesforce counterpart. The full term-by-term reference is in the companion document.</p>
+<div class="legend"><span class="o">Oracle Service Cloud, what CIS has today</span><span class="s">Salesforce, what we're building</span><span class="c">Applies to both</span></div>
+
+<div class="cards">
+  <div class="card"><h3>1. The profile does far more</h3><p>One Oracle profile sets access, screens, queues and how work is handed out.</p></div>
+  <div class="card"><h3>2. A queue is a field value</h3><p>An inquiry has a queue and an assigned person at once. It isn't the owner.</p></div>
+  <div class="card"><h3>3. No record types</h3><p>One screen layout shows and hides tabs by rule.</p></div>
+  <div class="card"><h3>4. An interface is a copy of the setup</h3><p>English and Spanish are two configurations over one database.</p></div>
+  <div class="card"><h3>5. Logic lives in two places</h3><p>Rules on the screen, then rules on the server. The server wins.</p></div>
+</div>
+
+<h2><span class="n">1</span>How Oracle's pieces connect</h2>
+<p class="sub">Two hubs explain most of the system: the profile, which shapes what a person sees and gets, and the inquiry, which everything else hangs from.</p>
+<div class="vs">
+  <div class="side oracle"><h3>The profile hub</h3>
+    <div class="stack">
+      <div class="node o"><b>Staff account</b><small>A person. Has exactly one profile</small></div>
+      <div class="down">↓<small>has one</small></div>
+      <div class="node fill"><b>Profile</b></div>
+      <div class="down">↓<small>which sets</small></div>
+      <div class="row"><div class="node o"><b>Navigation set</b><small>Menus, lists and reports. One per interface</small></div><div class="node o"><b>Workspace</b><small>The screen, one per record type</small></div></div>
+      <div class="row"><div class="node o"><b>Permissions</b><small>Read, edit, send, delete</small></div><div class="node o"><b>Queues</b><small>Which ones, in what rank order</small></div></div>
+      <div class="row"><div class="node o"><b>Pull policy</b><small>How work is taken, how many, inbox limit</small></div><div class="node o"><b>Add-ins</b><small>Phone bar, demographics pop-up</small></div></div>
+    </div>
+  </div>
+  <div class="side oracle"><h3>The inquiry hub</h3>
+    <div class="stack">
+      <div class="node fill"><b>Inquiry</b><small>Oracle calls it an incident. One per phone call, chat or email</small></div>
+      <div class="down">↓<small>always has</small></div>
+      <div class="row"><div class="node o"><b>Primary contact</b><small>Required, even for an anonymous chat</small></div><div class="node o"><b>Thread</b><small>Messages, notes and chat in one list</small></div></div>
+      <div class="row"><div class="node o"><b>Queue</b><small>A label on the record</small></div><div class="node o"><b>Assigned person</b><small>Plus their staff group</small></div></div>
+      <div class="row"><div class="node o"><b>Interface</b><small>English or Spanish</small></div><div class="node o"><b>Channel and source</b><small>How it arrived, set by the system</small></div></div>
+      <div class="down">↓<small>and may have</small></div>
+      <div class="row"><div class="node o"><b>Callback tasks</b><small>One per callback attempt</small></div><div class="node o"><b>Intake form</b><small>Smoking cessation interview</small></div></div>
+    </div>
+  </div>
+</div>
+
+<h2><span class="n">2</span>A queue in Oracle, a queue in Salesforce</h2>
+<p class="sub">Same word, different thing. In Oracle the queue stays on the record after someone takes it. In Salesforce the queue is the owner until someone takes it, and then it's gone.</p>
+<div class="vs">
+  <div class="side oracle"><h3>Oracle</h3>
+    <div class="rec"><div class="t">Inquiry 240915-000123</div>
+      <div class="f hl"><span>Queue</span><span>English Cancer Phone Call</span></div>
+      <div class="f hl"><span>Assigned to</span><span>A specialist</span></div>
+      <div class="f"><span>Staff group</span><span>Information Specialists</span></div>
+      <div class="f"><span>Status</span><span>Completed</span></div></div>
+    <p style="margin:10px 0 0;font-size:14.5px">Queue and assignee sit side by side, and both stay. The queue is a value from a menu.</p>
+    <div class="stack" style="margin-top:12px">
+      <div class="node o"><b>Who sets the queue</b><small>A business rule (email, chat), or the specialist by hand (phone)</small></div>
+      <div class="node o"><b>Who can work it</b><small>The profile lists the queues, ranks them, and sets how many to take</small></div>
+      <div class="node o"><b>How work arrives</b><small>Specialists pull it: they click Fill Inbox. Chats are pushed, from a separate list of chat queues</small></div>
+    </div>
+  </div>
+  <div class="side sf"><h3>Salesforce</h3>
+    <div class="rec"><div class="t">Case 00001234, waiting</div>
+      <div class="f hl"><span>Owner</span><span>Queue: Cancer Email</span></div>
+      <div class="f"><span>Status</span><span>New</span></div></div>
+    <div class="down">↓<small>a specialist accepts it</small></div>
+    <div class="rec"><div class="t">Case 00001234, being worked</div>
+      <div class="f hl"><span>Owner</span><span>A specialist</span></div>
+      <div class="f"><span>Program (a field we add)</span><span>General cancer</span></div></div>
+    <p style="margin:10px 0 0;font-size:14.5px">The owner is a queue or a person, never both. The queue name is lost on accept unless a field keeps it.</p>
+    <div class="stack" style="margin-top:12px">
+      <div class="node s"><b>Queue</b><small>Holds waiting records as their owner</small></div>
+      <div class="node s"><b>Omni-Channel routing</b><small>Pushes work to an available specialist, by queue or by skill</small></div>
+      <div class="node s"><b>Record type or field</b><small>Says what kind of inquiry it is, for good</small></div>
+    </div>
+  </div>
+</div>
+<div class="take"><b>At CIS today, the phone queue is a label.</b> Cisco routes the call. The specialist then opens an inquiry and picks the service number and queue by hand, so the queue records what kind of call it was. In the new system Amazon Connect holds the phone queues, and "what kind of call" becomes a record type and fields on the Case.</div>
+
+<h2><span class="n">3</span>One Oracle profile becomes six Salesforce things</h2>
+<p class="sub">CIS has 40 profiles because each one bundles language, program, chat and knowledge rights. In Salesforce those are separate settings that combine.</p>
+<div class="hub">
+  <div class="node o"><b>Oracle profile</b><small>Example: Bilingual Calls + Dual Chat + Knowledge</small></div>
+  <div class="ar">→</div>
+  <div class="spokes">
+    <div class="node s"><b>Profile</b><small>Base access and login rules</small></div>
+    <div class="node s"><b>Permission sets</b><small>One per capability: Spanish, clinical trials chat, knowledge editing</small></div>
+    <div class="node s"><b>Lightning app</b><small>The navigation and utility bar. Replaces the navigation set</small></div>
+    <div class="node s"><b>Page assignment</b><small>Which record page each app and record type gets. Replaces the workspace</small></div>
+    <div class="node s"><b>Queue membership and skills</b><small>Set on the queue or the person, not the profile</small></div>
+    <div class="node s"><b>Presence configuration</b><small>Capacity and statuses for Omni-Channel. Replaces pull policy and inbox limit</small></div>
+  </div>
+</div>
+<div class="take"><b>What it means:</b> the 40 profiles shouldn't be copied. A handful of profiles plus permission sets for language, program and knowledge rights covers the same ground.</div>
+
+<h2><span class="n">4</span>One workspace with rules, or record types with pages</h2>
+<p class="sub">Oracle has no record types. CIS has one inquiry screen, and rules show the tabs that fit the call. Salesforce can do the same with visibility rules, or split by record type.</p>
+<div class="vs">
+  <div class="side oracle"><h3>Oracle: one workspace, tabs shown by rule</h3>
+    <p style="font-size:13.5px;margin:0 0 8px;color:#55585C">Example: a smoking call. Solid tabs are shown, dashed tabs are hidden.</p><div class="tabs"><span class="tab">General coding</span><span class="tab">Demographics</span><span class="tab off">Clinical trials</span><span class="tab off">CCR intake</span><span class="tab">Smoking</span></div>
+    <div class="node o"><b>NCI Inquiry v2.1</b><small>The only live inquiry workspace. Workspace rules inside it decide which tabs and fields appear</small></div>
+    <div class="down">↓<small>assigned to people by</small></div>
+    <div class="node o"><b>Profile</b><small>Everyone on a profile gets the same workspace</small></div>
+  </div>
+  <div class="side sf"><h3>Salesforce: the same five groups as page sections</h3>
+    <div class="stack">
+      <div class="node s"><b>Case record type</b><small>Optional. One per program if picklist values or processes differ</small></div>
+      <div class="down">↓</div>
+      <div class="node s"><b>Lightning record page</b><small>One page, or one per record type</small></div>
+      <div class="down">↓<small>with Dynamic Forms sections</small></div>
+      <div class="row"><div class="node s"><b>General coding</b><small>Always shown</small></div><div class="node s"><b>Demographics</b><small>Phone and chat</small></div></div>
+      <div class="row"><div class="node s"><b>Clinical trial search</b><small>Clinical trial and CCR</small></div><div class="node s"><b>CCR intake</b><small>CCR</small></div><div class="node s"><b>Smoking</b><small>Smoking and VA Quit</small></div></div>
+    </div>
+  </div>
+</div>
+<div class="take"><b>The data supports this split.</b> In the last four years, general coding is filled on 98 to 100 percent of worked inquiries in every queue, and each of the other four groups is filled only in its own program's queues. Spanish queues fill the same fields as English ones.</div>
+
+<h2><span class="n">5</span>Where the rules run</h2>
+<p class="sub">Whether a field is visible or required is decided in layers. A later layer can undo an earlier one, so a field's own settings don't tell you how it behaves.</p>
+<div class="vs">
+  <div class="side oracle"><h3>Oracle: four layers</h3>
+    <div class="stack layers">
+      <div class="node o"><i>1</i><b>The field</b><small>Who can see and edit it, and whether it's required</small></div>
+      <div class="node o"><i>2</i><b>The workspace</b><small>Hidden, required or read-only on this screen</small></div>
+      <div class="node o"><i>3</i><b>Workspace rules</b><small>Run on the screen as the specialist works. Show, hide, require, set a value</small></div>
+      <div class="down">↓<small>the specialist saves</small></div>
+      <div class="node o"><i>4</i><b>Business rules</b><small>Run on the server. Set the queue, status and fields, send replies. They win over everything before</small></div>
+      <div class="node soft"><b>Custom code (PHP)</b><small>Runs when a record changes, or on a schedule</small></div>
+    </div>
+  </div>
+  <div class="side sf"><h3>Salesforce: the nearest equivalents</h3>
+    <div class="stack layers">
+      <div class="node s"><i>1</i><b>Field-level security</b><small>Who can see and edit the field</small></div>
+      <div class="node s"><i>2</i><b>Page layout and Dynamic Forms</b><small>What's on the page, required or read-only</small></div>
+      <div class="node s"><i>3</i><b>Dynamic Forms visibility</b><small>Shows and hides. It can't set a value while the specialist types</small></div>
+      <div class="down">↓<small>the specialist saves</small></div>
+      <div class="node s"><i>4</i><b>Validation rules and Flows</b><small>Before-save Flow sets values. After-save Flow, assignment rules and Omni-Channel flows route and notify</small></div>
+      <div class="node soft"><b>Apex, scheduled Flow</b><small>Only where Flow can't do it</small></div>
+    </div>
+  </div>
+</div>
+<div class="take"><b>Watch for:</b> Oracle workspace rules that fill in a value live, such as converting the client's time to Seattle time. In Salesforce that happens on save, or needs a small component.</div>
+
+<h2><span class="n">6</span>An interface is a second copy of the setup</h2>
+<p class="sub">CIS runs English and Spanish as two interfaces over one database. Salesforce has one setup, with language handled inside it.</p>
+<div class="vs">
+  <div class="side oracle"><h3>Oracle: two interfaces, one database</h3>
+    <div class="row">
+      <div class="node o"><b>nci (English)</b><small>Its own mailbox, message templates, chat hours, response times, settings</small></div>
+      <div class="node o"><b>nci2 (Spanish)</b><small>Its own mailbox, message templates, chat hours, response times, settings</small></div>
+    </div>
+    <div class="down">↓<small>both read and write</small></div>
+    <div class="node fill"><b>One database</b><small>Inquiries, contacts, articles. Each inquiry records which interface it came through</small></div>
+    <p style="font-size:14px;margin:10px 0 0">A third interface, nci1, exists and is unused.</p>
+  </div>
+  <div class="side sf"><h3>Salesforce: one org, language inside it</h3>
+    <div class="node fill"><b>One configuration</b></div>
+    <div class="down">↓<small>with</small></div>
+    <div class="row"><div class="node s"><b>Language on the Case</b><small>A field, set by the channel</small></div><div class="node s"><b>An email address per mailbox</b><small>Email-to-Case routing addresses</small></div></div>
+    <div class="row"><div class="node s"><b>A chat deployment per language</b><small>English and Spanish entry points</small></div><div class="node s"><b>Knowledge languages</b><small>English and Spanish</small></div></div>
+    <div class="row"><div class="node s"><b>Skills or queues by language</b><small>So Spanish work reaches bilingual specialists</small></div></div>
+  </div>
+</div>
+<div class="take"><b>What it means:</b> anything CIS set up twice (templates, hours, mailboxes) gets set up once in Salesforce with a language condition. Spanish is 7 percent of inquiries.</div>
+
+<h2><span class="n">7</span>Sibling articles, or translations</h2>
+<p class="sub">Oracle pairs an English and a Spanish article as siblings: two separate articles that point at each other. Salesforce treats Spanish as a language version of one article, which needs a master.</p>
+<div class="vs">
+  <div class="side oracle"><h3>Oracle: two records, linked</h3>
+    <div class="flow"><div class="node o"><b>Answer 4413</b><small>English. Its own text, status and owner</small></div><div class="ar">↔</div><div class="node o"><b>Answer 4848</b><small>Spanish. Its own text, status and owner</small></div></div>
+    <p style="font-size:14.5px;margin:12px 0 0">Siblings share products, categories and attachments. Either one can exist alone.</p>
+  </div>
+  <div class="side sf"><h3>Salesforce: one article, two languages</h3>
+    <div class="node fill"><b>Knowledge article</b><small>One article number</small></div>
+    <div class="down">↓</div>
+    <div class="row"><div class="node s"><b>English version</b><small>The master</small></div><div class="node s"><b>Spanish version</b><small>A translation of the master</small></div></div>
+    <p style="font-size:14.5px;margin:12px 0 0">A translation can't exist without its master article.</p>
+  </div>
+</div>
+<div class="take"><b>The catch:</b> of 1,594 live Spanish articles, 770 have an English sibling and 824 don't. Those 824 have no master to hang from, so either they become master articles in Spanish or CIS pairs them first.</div>
+
+<h2><span class="n">8</span>Retention: scrubbed, not deleted</h2>
+<p class="sub">CIS describes contacts as deleted at 15 months. The data shows the contact stays and its personal details are removed.</p>
+<div class="tl">
+  <div class="k"><b>Day 0</b>Contact created with the inquiry: name, phone, email, address</div>
+  <div class="k"><b>Months 0 to 15</b>Details visible. A returning caller's history can be found</div>
+  <div class="x"><b>Month 15</b>A script replaces the name, empties the address, flags the contact, and hides the inquiry's messages</div>
+  <div><b>After</b>The contact row and the inquiry stay for good, with coding intact for reporting</div>
+</div>
+<div class="vs" style="margin-top:16px">
+  <div class="side oracle"><h3>Oracle</h3><div class="node o"><b>A custom PHP script</b><small>Stored in File Manager, run on a schedule. Kicksaw hasn't read it yet</small></div></div>
+  <div class="side sf"><h3>Salesforce</h3><div class="node s"><b>A scheduled Flow or Apex job</b><small>Blanks the same fields, sets a flag, and hides or deletes the messages. Salesforce has no built-in rule for this</small></div></div>
+</div>
+<div class="take"><b>Evidence:</b> every contact created through March 2025 is flagged as scrubbed and every one from May 2025 on isn't, in a copy taken in July 2026. One thing to ask CIS: about half of scrubbed contacts still have a value in the email field.</div>
+
+<h2>Quick lookup</h2>
+<div class="tablewrap"><table>
+<tr><th>Oracle says</th><th>Think</th><th>But remember</th></tr>
+<tr><td>Incident, inquiry</td><td>Case</td><td>Oracle requires a contact on every one</td></tr>
+<tr><td>Queue</td><td>Queue, plus routing, plus a "kind of inquiry" field</td><td>It's a label that stays on the record</td></tr>
+<tr><td>Profile</td><td>Profile, permission sets, app, page assignment, queue membership, presence</td><td>Don't copy the 40</td></tr>
+<tr><td>Workspace</td><td>Lightning record page</td><td>No record types in Oracle</td></tr>
+<tr><td>Workspace rule</td><td>Dynamic Forms visibility, validation rule, before-save Flow</td><td>Oracle sets values live on screen</td></tr>
+<tr><td>Business rule</td><td>Record-triggered Flow, assignment rule, Omni-Channel flow</td><td>One rule base per object, and all matching rules act</td></tr>
+<tr><td>Interface</td><td>Language and channel settings</td><td>Oracle duplicates the setup per interface</td></tr>
+<tr><td>Navigation set</td><td>Lightning app</td><td>Oracle's lists are reports</td></tr>
+<tr><td>Answer</td><td>Knowledge article</td><td>The product field says what kind of article it is</td></tr>
+<tr><td>Sibling answer</td><td>Translation</td><td>Siblings are separate records</td></tr>
+<tr><td>Products, categories</td><td>Data categories</td><td>At CIS they're on articles, never on inquiries</td></tr>
+<tr><td>Standard text</td><td>Quick Text</td><td>352 items at CIS</td></tr>
+<tr><td>Task</td><td>A callback object</td><td>Each callback attempt is its own task</td></tr>
+<tr><td>Menu-only object</td><td>Picklist values</td><td>Oracle stores ids, Salesforce stores text</td></tr>
+<tr><td>Custom script, custom process</td><td>Scheduled Flow, Apex</td><td>PHP, not readable through the API</td></tr>
+</table></div>
+
+<footer><span>Copyright © 2026 Kicksaw</span><span>Fred Hutch NCI CIS migration · Internal, Kicksaw team · Companion to "How Oracle works, for a Salesforce team"</span></footer>
+</div>
+</body>
+</html>

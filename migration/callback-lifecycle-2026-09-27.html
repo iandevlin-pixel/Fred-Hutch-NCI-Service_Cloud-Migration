@@ -1,0 +1,445 @@
+<!-- Frozen 2026-09-29. Published to the Notion Project Library as "CIS callback lifecycle": https://app.notion.com/p/3ead4b87741781399748cda690996b21 . The Notion page is the live copy; edit there, not here. -->
+<title>CIS Callback Lifecycle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Source+Sans+Pro:wght@400;600;700&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --navy:#043056; --blue:#0B70B9; --cyan:#68D5F8; --orange:#DD6443; --smoke:#EFEFEF; --ink:#343335;
+  --muted:#5E5D60; --rule:#D9D9D9; --line:#6B6A6D; --white:#FFFFFF;
+  --head:'Inter',Arial,sans-serif; --body:'Source Sans Pro',Arial,sans-serif;
+}
+body{background:var(--white);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;padding:0 24px}
+.wrap{max-width:1040px;margin:0 auto;padding-block:32px 48px;display:flex;flex-direction:column;gap:48px}
+h1,h2,h3{font-family:var(--head);color:var(--navy);line-height:1.2;text-wrap:balance;margin:0}
+h1{font-size:36px;font-weight:800;letter-spacing:-.01em}
+h2{font-size:24px;font-weight:700}
+h3{font-size:17px;font-weight:600}
+p{margin:0;max-width:68ch}
+.logo{height:32px;width:auto;display:block;align-self:flex-start;margin-bottom:16px}
+.eyebrow{font-family:var(--head);font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--blue)}
+.head{display:flex;flex-direction:column;gap:12px;padding-bottom:24px;border-bottom:1px solid var(--rule)}
+.lede{font-size:18px}
+.meta{font-size:14px;color:var(--muted)}
+section{display:flex;flex-direction:column;gap:16px}
+.src{font-family:var(--body);font-size:12.5px;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.note{font-size:14.5px;color:var(--muted)}
+
+.terms{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.term{background:var(--white);border:1px solid var(--rule);border-top:4px solid var(--blue);border-radius:8px;padding:16px 24px 24px;display:flex;flex-direction:column;gap:8px}
+.term.att{border-top-color:var(--orange)}
+.term .word{font-family:var(--head);font-size:22px;font-weight:700;color:var(--navy)}
+.rule-line{border-left:4px solid var(--orange);padding:4px 0 4px 16px;font-size:16px}
+.rule-line strong{color:var(--navy)}
+
+figure{margin:0;display:flex;flex-direction:column;gap:12px}
+.fig{background:var(--white);border:1px solid var(--rule);border-radius:8px;overflow-x:auto;padding:16px}
+.fig svg{display:block;width:100%;min-width:780px;height:auto;color:var(--ink)}
+figcaption{font-size:15px;color:var(--muted);max-width:80ch}
+figcaption strong{color:var(--navy);font-weight:600}
+
+.d-task{fill:var(--white);stroke:var(--navy);stroke-width:1.5}
+.d-accent{fill:var(--cyan);stroke:var(--navy);stroke-width:1.5}
+.d-ok{fill:var(--white);stroke:var(--blue);stroke-width:2}
+.d-stop{fill:var(--navy);stroke:var(--navy);stroke-width:1.5}
+.d-neutral{fill:var(--smoke);stroke:var(--line);stroke-width:1.5}
+.d-sms{fill:var(--white);stroke:var(--ink);stroke-width:1.5;stroke-dasharray:5 4}
+.l{fill:none;stroke:var(--line);stroke-width:1.5}
+.l-ok{fill:none;stroke:var(--blue);stroke-width:2}
+.l-warn{fill:none;stroke:var(--orange);stroke-width:2}
+.l-stop{fill:none;stroke:var(--navy);stroke-width:2}
+.l-sms{fill:none;stroke:var(--ink);stroke-width:1.5;stroke-dasharray:5 4}
+.l-t{fill:none;stroke:var(--navy);stroke-width:1.5;stroke-dasharray:4 3}
+.l-band{stroke:var(--rule);stroke-width:1}
+.m-mut{fill:var(--line)} .m-ok{fill:var(--blue)} .m-warn{fill:var(--orange)} .m-stop{fill:var(--navy)} .m-sms{fill:var(--ink)}
+.tx{font-family:var(--body);font-size:13.5px;fill:var(--ink)}
+.tb{font-weight:600;fill:var(--navy)}
+.ts{font-size:12px;font-weight:400;fill:var(--muted)}
+.te{font-family:var(--head);font-weight:700;font-size:10.5px;letter-spacing:.08em;fill:var(--muted)}
+.tok{fill:var(--blue);font-weight:600}
+.twarn{fill:var(--ink);font-weight:600}
+.tstop{fill:var(--navy);font-weight:600}
+.tsms{fill:var(--ink)}
+.tacc{fill:var(--navy)}
+.tnv{fill:var(--navy)}
+.tinv{fill:var(--white)}
+.ts.twarn,.ts.tstop,.ts.tok{font-weight:400}
+
+.tbl{overflow-x:auto;background:var(--white);border:1px solid var(--rule);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;padding:8px 16px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-family:var(--head);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--white);background:var(--navy)}
+tbody tr:nth-child(even) td{background:var(--smoke)}
+tr:last-child td{border-bottom:0}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
+.pair>div{display:flex;flex-direction:column;gap:8px}
+
+.chip{display:inline-block;font-family:var(--body);font-weight:600;font-size:12px;padding:2px 8px;border-radius:99px;white-space:nowrap;border:1px solid transparent}
+.c-ok{background:var(--blue);color:var(--white);border-color:var(--blue)}
+.c-acc{background:var(--smoke);color:var(--navy);border-color:var(--rule)}
+.c-warn{background:var(--white);color:var(--ink);border-color:var(--orange)}
+.c-stop{background:var(--navy);color:var(--white);border-color:var(--navy)}
+.o-miss{color:var(--ink);font-weight:600;white-space:nowrap}
+.o-miss::before{content:"";display:inline-block;width:8px;height:8px;background:var(--orange);margin-right:8px;vertical-align:1px}
+.o-hit{color:var(--blue);font-weight:600}
+.o-end{color:var(--navy);font-weight:700}
+
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px 32px;margin:0;padding:0;list-style:none}
+.rules li{display:flex;flex-direction:column;gap:4px;padding-block:12px;border-top:1px solid var(--rule)}
+.rules b{font-family:var(--head);font-weight:600;color:var(--navy)}
+
+.lookalikes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.la{background:var(--white);border:1px solid var(--rule);border-radius:8px;padding:16px 24px 24px;display:flex;flex-direction:column;gap:8px}
+.la.fence{border:2px dashed var(--orange)}
+
+.qs{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:12px;max-width:80ch}
+.qs strong{color:var(--navy)}
+footer{border-top:1px solid var(--rule);padding-top:24px;display:flex;flex-direction:column;gap:12px;font-size:14px;color:var(--muted)}
+footer strong{color:var(--navy)}
+footer ul{margin:0;padding-left:18px}
+.copy{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding-top:12px;border-top:1px solid var(--smoke);color:var(--ink)}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+@media (max-width:600px){ h1{font-size:30px} .wrap{gap:40px;padding-block:24px 40px} body{padding:0 16px} }
+</style>
+
+<div class="wrap">
+
+<header class="head">
+  <img class="logo" src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NTMuMjQ1NCAyOTcuMDU4NyI+CiAgPGc+CiAgICA8ZyBpZD0idHlwZSI+CiAgICAgIDxwYXRoIGlkPSJ0eXBlX0NvbXBvdW5kUGF0aEl0ZW1fIiBkYXRhLW5hbWU9InR5cGUgJmx0O0NvbXBvdW5kUGF0aEl0ZW0mZ3Q7IiBkPSJNNjQuNTgyNSwxNTQuOTkwOSwxMTMuNDM0LDEyMC43MjJjNy42NTU4LTYuMDE1MywxNi41ODc2LDUuNjUwNyw4Ljc0OTUsMTEuNDgzN0w3OS4zNDczLDE2Mi4yODIxbDQ2LjQ4MTgsMzMuNzIyMWM3LjY1NTgsNS44MzMtMS4wOTM3LDE3LjQ5OS04Ljc0OTUsMTEuNDgzN0w2NC41ODI1LDE2OS41NzM0djMxLjg5OTNjMCw5Ljg0MzItMTQuNTgyNSw5Ljg0MzItMTQuNTgyNSwwVjkwLjI4MDljMC05Ljg0MzIsMTQuNTgyNS05Ljg0MzIsMTQuNTgyNSwwWiIgc3R5bGU9ImZpbGw6ICM0MTQxNDIiLz4KICAgICAgPHBhdGggaWQ9InR5cGVfQ29tcG91bmRQYXRoSXRlbV8yIiBkYXRhLW5hbWU9InR5cGUgJmx0O0NvbXBvdW5kUGF0aEl0ZW0mZ3Q7IiBkPSJNMTY0LjEwNTcsOTMuMDE1MmMwLDUuODMzLTMuMjgxMSw5LjExNC05LjExNDEsOS4xMTRzLTkuMTE0MS0zLjI4MS05LjExNDEtOS4xMTQsMy4yODExLTkuMTE0MSw5LjExNDEtOS4xMTQxUzE2NC4xMDU3LDg3LjE4MjIsMTY0LjEwNTcsOTMuMDE1MlpNMTQ3LjcsMTI2LjczNzJjMC05Ljg0MzIsMTQuNTgyNS05Ljg0MzIsMTQuNTgyNSwwdjc0LjczNTVjMCw5Ljg0MzItMTQuNTgyNSw5Ljg0MzItMTQuNTgyNSwwWiIgc3R5bGU9ImZpbGw6ICM0MTQxNDIiLz4KICAgICAgPHBhdGggaWQ9InR5cGVfQ29tcG91bmRQYXRoSXRlbV8zIiBkYXRhLW5hbWU9InR5cGUgJmx0O0NvbXBvdW5kUGF0aEl0ZW0mZ3Q7IiBkPSJNMjUwLjY4NjYsMTM0Ljk0SDIwNi45MzljLTQuOTIxNiwwLTcuMjkxMiwyLjM3LTcuMjkxMiw3LjI5MTN2NDMuNzQ3NWMwLDQuOTIxNiwyLjM3LDcuMjkxMyw3LjI5MTIsNy4yOTEzaDQzLjc0NzZjNC45MjE2LDAsNy4yOTEyLTIuMzcsNy4yOTEyLTcuMjkxMywwLTkuODQzMiwxNC41ODI1LTkuODQzMiwxNC41ODI1LDAsMCwxMy44NTM0LTguMDIsMjEuODczOC0yMS44NzM3LDIxLjg3MzhIMjA2LjkzOWMtMTMuODUzNCwwLTIxLjg3MzgtOC4wMi0yMS44NzM4LTIxLjg3MzhWMTQyLjIzMTJjMC0xMy44NTM0LDguMDItMjEuODczOCwyMS44NzM4LTIxLjg3MzhoNDMuNzQ3NmMxMy44NTMzLDAsMjEuODczNyw4LjAyLDIxLjg3MzcsMjEuODczOCwwLDkuODQzMi0xNC41ODI1LDkuODQzMi0xNC41ODI1LDBDMjU3Ljk3NzgsMTM3LjMxLDI1NS42MDgyLDEzNC45NCwyNTAuNjg2NiwxMzQuOTRaIiBzdHlsZT0iZmlsbDogIzQxNDE0MiIvPgogICAgICA8cGF0aCBpZD0idHlwZV9Db21wb3VuZFBhdGhJdGVtXzQiIGRhdGEtbmFtZT0idHlwZSAmbHQ7Q29tcG91bmRQYXRoSXRlbSZndDsiIGQ9Ik0zMDYuMDk4MSwxNTQuOTkwOSwzNTQuOTUsMTIwLjcyMmM3LjY1NTgtNi4wMTUzLDE2LjU4NzYsNS42NTA3LDguNzUsMTEuNDgzN2wtNDIuODM2MSwzMC4wNzY0LDQ2LjQ4MTgsMzMuNzIyMWM3LjY1NTgsNS44MzMtMS4wOTM3LDE3LjQ5OS04Ljc1LDExLjQ4MzdsLTUyLjQ5NzEtMzcuOTE0NXYzMS44OTkzYzAsOS44NDMyLTE0LjU4MjUsOS44NDMyLTE0LjU4MjUsMFY5MC4yODA5YzAtOS44NDMyLDE0LjU4MjUtOS44NDMyLDE0LjU4MjUsMFoiIHN0eWxlPSJmaWxsOiAjNDE0MTQyIi8+CiAgICAgIDxwYXRoIGlkPSJ0eXBlX0NvbXBvdW5kUGF0aEl0ZW1fNSIgZGF0YS1uYW1lPSJ0eXBlICZsdDtDb21wb3VuZFBhdGhJdGVtJmd0OyIgZD0iTTQwMC4xNTQxLDIwNy44NTI1Yy05LjI5NjQsMC0xNi4wNDA4LTMuNDYzMy0xOS42ODY0LTEwLjc1NDYtNC4zNzQ4LTguNTY3Miw4LjU2NzItMTUuNjc2MiwxMi45NDE5LTcuMTA5LDEuMjc2LDIuMzcsMy4yODExLDMuMjgxMSw2Ljc0NDUsMy4yODExSDQ0NC44MTNjNC45MjE2LDAsNy4yOTEzLTIuMzcsNy4yOTEzLTcuMjkxM3YtOS4xMTRjMC00LjkyMTYtMi4zNy03LjI5MTMtNy4yOTEzLTcuMjkxM0g0MDAuMTU0MWMtMTMuODUzNCwwLTIxLjg3MzgtOC4wMi0yMS44NzM4LTIxLjg3Mzh2LTUuNDY4NGMwLTEzLjg1MzQsOC4wMi0yMS44NzM4LDIxLjg3MzgtMjEuODczOEg0NDEuMzVjOS4yOTYzLDAsMTYuMDQwNywzLjQ2MzMsMTkuNjg2NCwxMC43NTQ2LDQuMzc0Nyw4LjU2NzItOC41NjczLDE1LjY3NjItMTIuOTQyLDcuMTA5LTEuMjc2LTIuMzctMy4yODExLTMuMjgxMS02Ljc0NDQtMy4yODExSDM5OS40MjQ5Yy00LjkyMTYsMC03LjI5MTIsMi4zNy03LjI5MTIsNy4yOTEzVjE0Ny43YzAsNC45MjE2LDIuMzcsNy4yOTEzLDcuMjkxMiw3LjI5MTNoNDQuNDc2N2MxMy44NTM0LDAsMjEuODczOCw4LjAyLDIxLjg3MzgsMjEuODczOHY5LjExNGMwLDEzLjg1MzQtOC4wMiwyMS44NzM4LTIxLjg3MzgsMjEuODczOFoiIHN0eWxlPSJmaWxsOiAjNDE0MTQyIi8+CiAgICAgIDxwYXRoIGlkPSJ0eXBlX0NvbXBvdW5kUGF0aEl0ZW1fNiIgZGF0YS1uYW1lPSJ0eXBlICZsdDtDb21wb3VuZFBhdGhJdGVtJmd0OyIgZD0iTTU1MC41MzMyLDEyMC4zNTc0YzEzLjg1MzQsMCwyMS44NzM4LDguMDIsMjEuODczOCwyMS44NzM4djU4LjMzYzAsNC45MjE2LTIuMzcsNy4yOTEzLTcuMjkxMiw3LjI5MTNINTA0Ljk2MjljLTEzLjg1MzQsMC0yMS44NzM4LTguMDItMjEuODczOC0yMS44NzM4di05LjExNGMwLTEzLjg1MzQsOC4wMi0yMS44NzM4LDIxLjg3MzgtMjEuODczOGg1Mi44NjE2di0xMi43NmMwLTQuOTIxNi0yLjM3LTcuMjkxMy03LjI5MTMtNy4yOTEzSDUwNi43ODU3Yy0zLjQ2MzQsMC01LjQ2ODUuOTExNC02Ljc0NDQsMy4yODExLTQuMzc0OCw4LjU2NzItMTcuMzE2OCwxLjQ1ODItMTIuOTQyLTcuMTA5LDMuNjQ1Ni03LjI5MTMsMTAuMzktMTAuNzU0NiwxOS42ODY0LTEwLjc1NDZabTcuMjkxMyw0OS4yMTZINTA0Ljk2MjljLTQuOTIxNiwwLTcuMjkxMywyLjM3LTcuMjkxMyw3LjI5MTN2OS4xMTRjMCw0LjkyMTYsMi4zNyw3LjI5MTMsNy4yOTEzLDcuMjkxM2g1Mi44NjE2WiIgc3R5bGU9ImZpbGw6ICM0MTQxNDIiLz4KICAgICAgPHBhdGggaWQ9InR5cGVfQ29tcG91bmRQYXRoSXRlbV83IiBkYXRhLW5hbWU9InR5cGUgJmx0O0NvbXBvdW5kUGF0aEl0ZW0mZ3Q7IiBkPSJNNjc4LjQ5MjYsMTgzLjA2MjJsMjAuNTk3OS01OS4wNTkyYzMuMjgxLTkuMjk2MywxNy4xMzQ0LTQuMzc0NywxMy42NzExLDQuOTIxNmwtMjcuMzQyMyw3NS42NDY4Yy0yLjE4NzMsNi41NjIyLTExLjQ4MzcsNi41NjIyLTEzLjg1MzQsMGwtMjAuNzgtNTkuNDIzNy0yMC43OCw1OS40MjM3Yy0yLjE4NzQsNi41NjIyLTExLjQ4MzgsNi41NjIyLTEzLjg1MzQsMEw1ODguODEsMTI4LjkyNDZjLTMuNDYzNC05LjI5NjMsMTAuMzktMTQuMjE3OSwxMy42NzEtNC45MjE2bDIwLjU5NzksNTkuMDU5MiwyMC43OC01OS4wNTkyYzIuMzctNi41NjIxLDExLjY2Ni02LjU2MjEsMTMuODUzNCwwWiIgc3R5bGU9ImZpbGw6ICM0MTQxNDIiLz4KICAgIDwvZz4KICAgIDxnIGlkPSJsb2dvTWFyayI+CiAgICAgIDxwb2x5Z29uIGlkPSJsb2dvTWFya19QYXRoSXRlbV8iIGRhdGEtbmFtZT0ibG9nb01hcmsgJmx0O1BhdGhJdGVtJmd0OyIgcG9pbnRzPSI5MDMuMjQ1IDE0OS4xNzMgODMzLjQ1NCA1MCA2OTcuOTc2IDUwIDgzMy40NTQgMjQ3LjA1OSA5MDMuMjQ1IDE0OS4xNzMiIHN0eWxlPSJmaWxsOiAjMDhhZmU2Ii8+CiAgICAgIDxwb2x5Z29uIGlkPSJsb2dvTWFya19QYXRoSXRlbV8yIiBkYXRhLW5hbWU9ImxvZ29NYXJrICZsdDtQYXRoSXRlbSZndDsiIHBvaW50cz0iNzY2LjM5OSAxNDkuMTczIDgzMy40NTQgMjQ3LjA1OSA2OTguNjYgMjQ3LjA1OSA3NjYuMzk5IDE0OS4xNzMiIHN0eWxlPSJmaWxsOiAjMDA3MmJhIi8+CiAgICAgIDxwb2x5Z29uIGlkPSJsb2dvTWFya19QYXRoSXRlbV8zIiBkYXRhLW5hbWU9ImxvZ29NYXJrICZsdDtQYXRoSXRlbSZndDsiIHBvaW50cz0iOTAzLjI0NSAxNDkuMTczIDgzMy40NTQgNTAgNjk3Ljk3NiA1MCA5MDMuMjQ1IDE0OS4xNzMiIHN0eWxlPSJmaWxsOiAjNDljOGY1Ii8+CiAgICAgIDxwb2x5Z29uIGlkPSJsb2dvTWFya19QYXRoSXRlbV80IiBkYXRhLW5hbWU9ImxvZ29NYXJrICZsdDtQYXRoSXRlbSZndDsiIHBvaW50cz0iODMzLjQ1NCAyNDcuMDU5IDc2Ni4zOTkgMTQ5LjE3MyA3NTAuMjcyIDE3Mi40NzcgODMzLjQ1NCAyNDcuMDU5IiBzdHlsZT0iZmlsbDogIzAwNTQ4NSIvPgogICAgPC9nPgogIDwvZz4KPC9zdmc+Cg==" alt="Kicksaw">
+  <div class="eyebrow">Fred Hutch · NCI CIS · Oracle current state · Kicksaw internal</div>
+  <h1>CIS Callback Lifecycle</h1>
+  <p class="lede">How a callback gets created, worked and closed in Oracle today, pieced together from the client's own walkthroughs. It covers callbacks only. Follow-up surveys are a separate feature, fenced off below.</p>
+  <p class="meta">Drawn from the client's discovery walkthroughs.</p>
+</header>
+
+<section>
+  <h2>Two words that get mixed up</h2>
+  <div class="terms">
+    <div class="term">
+      <div class="word">Callback</div>
+      <p>A scheduled check-in call, at an exact date and time the client agreed to. Callbacks are numbered 1, 2, 3 and so on through the series.</p>
+    </div>
+    <div class="term att">
+      <div class="word">Attempt</div>
+      <p>One try at reaching the client for a given callback. Each callback gets up to three. "A callback attempt doesn't mean you called them... We tried."</p>
+    </div>
+  </div>
+  <p class="rule-line"><strong>In Oracle, each attempt is its own task.</strong> The unit of work is the attempt, and the callback number is a label carried on each task.</p>
+</section>
+
+<section>
+  <h2>One callback, up to three attempts</h2>
+  <figure>
+    <div class="fig">
+      <svg viewBox="0 0 1120 320" role="img" aria-label="Timeline of one callback. Text reminders go out 24 hours and 1 hour before the agreed time T. Attempt 1 is within the scheduled hour, attempt 2 about 15 minutes later, attempt 3 the next business day at T. Each attempt is a new Oracle task. Reaching the client on any attempt leads to the next callback. Missing all three ends the series.">
+        <defs>
+          <marker id="f1-mut" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="m-mut"/></marker>
+          <marker id="f1-ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="m-ok"/></marker>
+          <marker id="f1-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="m-warn"/></marker>
+          <marker id="f1-stop" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="m-stop"/></marker>
+        </defs>
+
+        <line class="l-band" x1="186" y1="16" x2="186" y2="84"/>
+        <line class="l-band" x1="752" y1="16" x2="752" y2="84"/>
+        <text class="tx te" x="24" y="32">DAY BEFORE</text>
+        <text class="tx te" x="200" y="32">SCHEDULED DAY</text>
+        <text class="tx te" x="766" y="32">NEXT BUSINESS DAY</text>
+
+        <text class="tx ts tacc" x="380" y="62" text-anchor="middle">T, agreed time</text>
+        <line class="l-t" x1="380" y1="70" x2="380" y2="200"/>
+
+        <rect class="d-sms" x="30" y="100" width="130" height="52" rx="6"/>
+        <text class="tx tb tsms" x="95" y="122" text-anchor="middle">Text reminder</text>
+        <text class="tx ts" x="95" y="141" text-anchor="middle">24 h before</text>
+
+        <rect class="d-sms" x="215" y="100" width="130" height="52" rx="6"/>
+        <text class="tx tb tsms" x="280" y="122" text-anchor="middle">Text reminder</text>
+        <text class="tx ts" x="280" y="141" text-anchor="middle">1 h before</text>
+
+        <rect class="d-task" x="400" y="96" width="128" height="60" rx="6"/>
+        <text class="tx tb" x="464" y="120" text-anchor="middle">Attempt 1</text>
+        <text class="tx ts" x="464" y="140" text-anchor="middle">within the hour</text>
+
+        <rect class="d-task" x="592" y="96" width="128" height="60" rx="6"/>
+        <text class="tx tb" x="656" y="120" text-anchor="middle">Attempt 2</text>
+        <text class="tx ts" x="656" y="140" text-anchor="middle">~15 min later</text>
+
+        <rect class="d-task" x="784" y="96" width="128" height="60" rx="6"/>
+        <text class="tx tb" x="848" y="120" text-anchor="middle">Attempt 3</text>
+        <text class="tx ts" x="848" y="140" text-anchor="middle">at T again</text>
+
+        <rect class="d-stop" x="976" y="96" width="128" height="60" rx="6"/>
+        <text class="tx tb tinv" x="1040" y="120" text-anchor="middle">Series ends</text>
+        <text class="tx ts tinv" x="1040" y="140" text-anchor="middle">no more callbacks</text>
+
+        <line class="l-warn" x1="528" y1="126" x2="588" y2="126" marker-end="url(#f1-warn)"/>
+        <text class="tx ts twarn" x="560" y="117" text-anchor="middle">no answer</text>
+        <text class="tx ts" x="560" y="143" text-anchor="middle">new task</text>
+
+        <line class="l-warn" x1="720" y1="126" x2="780" y2="126" marker-end="url(#f1-warn)"/>
+        <text class="tx ts twarn" x="752" y="117" text-anchor="middle">no answer</text>
+        <text class="tx ts" x="752" y="143" text-anchor="middle">new task</text>
+
+        <line class="l-stop" x1="912" y1="126" x2="972" y2="126" marker-end="url(#f1-stop)"/>
+        <text class="tx ts tstop" x="944" y="117" text-anchor="middle">no answer</text>
+        <text class="tx ts" x="944" y="143" text-anchor="middle">3rd miss</text>
+
+        <line class="l-ok" x1="464" y1="156" x2="464" y2="210" marker-end="url(#f1-ok)"/>
+        <text class="tx ts tok" x="472" y="188">reached</text>
+        <line class="l-ok" x1="656" y1="156" x2="656" y2="210" marker-end="url(#f1-ok)"/>
+        <text class="tx ts tok" x="664" y="188">reached</text>
+        <line class="l-ok" x1="848" y1="156" x2="848" y2="210" marker-end="url(#f1-ok)"/>
+        <text class="tx ts tok" x="856" y="188">reached</text>
+
+        <rect class="d-ok" x="400" y="214" width="512" height="44" rx="6"/>
+        <text class="tx" x="656" y="241" text-anchor="middle">Reached on any attempt: fill in this task, agree the next callback</text>
+
+        <line class="l-ok" x1="912" y1="236" x2="972" y2="236" marker-end="url(#f1-ok)"/>
+        <text class="tx ts tok" x="942" y="228" text-anchor="middle">creates</text>
+        <rect class="d-task" x="976" y="214" width="128" height="44" rx="6"/>
+        <text class="tx tb" x="1040" y="233" text-anchor="middle">Callback N+1</text>
+        <text class="tx ts" x="1040" y="250" text-anchor="middle">Attempt 1 task</text>
+
+        <rect class="d-task" x="30" y="283" width="22" height="14" rx="3"/>
+        <text class="tx ts" x="60" y="294">Oracle task, one per attempt</text>
+        <rect class="d-sms" x="260" y="283" width="22" height="14" rx="3"/>
+        <text class="tx ts" x="290" y="294">Text reminder, Amazon Pinpoint today</text>
+        <line class="l-t" x1="540" y1="290" x2="562" y2="290"/>
+        <text class="tx ts" x="570" y="294">T: time agreed with the client, converted to Seattle time</text>
+      </svg>
+    </div>
+    <figcaption><strong>Every attempt, answered or not, becomes its own task.</strong> Reaching the client on any attempt closes that callback, and the specialist books the next one with the client. Three misses end the series, and the client gets no further callbacks. Attempt 2 is loose in practice: specialists often work another callback and come back. Not to scale.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>Who creates each task</h2>
+  <figure>
+    <div class="fig">
+      <svg viewBox="0 0 1100 400" role="img" aria-label="Loop showing who creates callback tasks. The intake specialist creates the Callback 1 task, which lands on the callback report. A specialist on a callback shift pulls the top task and dials. If reached, they fill in the task and create the next callback task, which returns to the report. If not reached on attempt 1 or 2, they create the next attempt task, which returns to the report. No answer on attempt 3 ends the series. The report also feeds text reminders.">
+        <defs>
+          <marker id="f2-mut" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="m-mut"/></marker>
+          <marker id="f2-ok" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="m-ok"/></marker>
+          <marker id="f2-warn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="m-warn"/></marker>
+          <marker id="f2-stop" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="m-stop"/></marker>
+          <marker id="f2-sms" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="m-sms"/></marker>
+        </defs>
+
+        <rect class="d-task" x="20" y="160" width="150" height="60" rx="6"/>
+        <text class="tx tb" x="95" y="186" text-anchor="middle">Intake</text>
+        <text class="tx ts" x="95" y="205" text-anchor="middle">call or VA referral</text>
+        <text class="tx ts" x="95" y="240" text-anchor="middle">intake specialist</text>
+
+        <line class="l" x1="170" y1="190" x2="266" y2="190" marker-end="url(#f2-mut)"/>
+        <text class="tx ts" x="219" y="181" text-anchor="middle">creates</text>
+        <text class="tx ts" x="219" y="207" text-anchor="middle">Callback 1 task</text>
+
+        <rect class="d-accent" x="270" y="160" width="160" height="60" rx="6"/>
+        <text class="tx tb tacc" x="350" y="186" text-anchor="middle">Callback report</text>
+        <text class="tx ts tnv" x="350" y="205" text-anchor="middle">open tasks, by time</text>
+
+        <line class="l" x1="430" y1="190" x2="526" y2="190" marker-end="url(#f2-mut)"/>
+        <text class="tx ts" x="479" y="181" text-anchor="middle">pulled at</text>
+        <text class="tx ts" x="479" y="207" text-anchor="middle">scheduled time</text>
+
+        <rect class="d-task" x="530" y="160" width="160" height="60" rx="6"/>
+        <text class="tx tb" x="610" y="186" text-anchor="middle">Shift specialist</text>
+        <text class="tx ts" x="610" y="205" text-anchor="middle">one task at a time</text>
+        <text class="tx ts" x="610" y="240" text-anchor="middle">anyone on a callback shift</text>
+
+        <line class="l" x1="690" y1="190" x2="730" y2="190" marker-end="url(#f2-mut)"/>
+        <text class="tx ts" x="711" y="181" text-anchor="middle">dials</text>
+
+        <polygon class="d-task" points="790,146 846,190 790,234 734,190"/>
+        <text class="tx tb" x="790" y="194" text-anchor="middle">Reached?</text>
+
+        <line class="l-ok" x1="790" y1="146" x2="790" y2="104" marker-end="url(#f2-ok)"/>
+        <text class="tx ts tok" x="798" y="130">yes</text>
+        <rect class="d-ok" x="710" y="40" width="160" height="60" rx="6"/>
+        <text class="tx tb" x="790" y="66" text-anchor="middle">Fill in task</text>
+        <text class="tx ts" x="790" y="85" text-anchor="middle">agree next time</text>
+
+        <path class="l-ok" d="M710,70 H350 V156" marker-end="url(#f2-ok)"/>
+        <text class="tx ts tok" x="530" y="62" text-anchor="middle">creates next callback task (Callback N+1, Attempt 1)</text>
+
+        <line class="l" x1="870" y1="70" x2="926" y2="70" marker-end="url(#f2-mut)"/>
+        <text class="tx ts" x="898" y="62" text-anchor="middle">if last</text>
+        <text class="tx ts" x="898" y="86" text-anchor="middle">callback</text>
+        <rect class="d-neutral" x="930" y="40" width="160" height="60" rx="6"/>
+        <text class="tx tb" x="1010" y="66" text-anchor="middle">Series complete</text>
+        <text class="tx ts" x="1010" y="85" text-anchor="middle">VA may extend to ~9</text>
+
+        <line class="l-stop" x1="846" y1="190" x2="926" y2="190" marker-end="url(#f2-stop)"/>
+        <text class="tx ts tstop" x="886" y="181" text-anchor="middle">no answer</text>
+        <text class="tx ts" x="886" y="207" text-anchor="middle">on attempt 3</text>
+        <rect class="d-stop" x="930" y="160" width="160" height="60" rx="6"/>
+        <text class="tx tb tinv" x="1010" y="186" text-anchor="middle">Series ends</text>
+        <text class="tx ts tinv" x="1010" y="205" text-anchor="middle">no more callbacks</text>
+
+        <path class="l-warn" d="M790,234 V310 H390 V224" marker-end="url(#f2-warn)"/>
+        <text class="tx ts twarn" x="800" y="272">no answer on attempt 1 or 2</text>
+        <text class="tx ts twarn" x="590" y="302" text-anchor="middle">creates next attempt task</text>
+        <text class="tx ts" x="590" y="328" text-anchor="middle">Attempt 2 about 15 min later, Attempt 3 next business day at T</text>
+
+        <path class="l-sms" d="M300,220 V336" marker-end="url(#f2-sms)"/>
+        <text class="tx ts tsms" x="292" y="286" text-anchor="end">report feeds</text>
+        <rect class="d-sms" x="200" y="340" width="180" height="48" rx="6"/>
+        <text class="tx tb tsms" x="290" y="360" text-anchor="middle">Text reminders</text>
+        <text class="tx ts" x="290" y="378" text-anchor="middle">24 h and 1 h before</text>
+      </svg>
+    </div>
+    <figcaption><strong>No one is assigned a callback, and no system creates the next task.</strong> Every task lands on one report. Specialists on a callback shift work it from the top, one client at a time, and whoever makes the call creates the next task by hand. The person who books a callback is usually not the person who makes it.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>One client, start to finish</h2>
+  <p class="note">Illustrative example, not real data. The client is in Eastern time and chose Thursdays at 10:00, which Oracle stores as 07:00 Seattle time. Specialists A, B and C are whoever is on shift.</p>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>Task</th><th>Callback</th><th>Attempt</th><th>When (client time)</th><th>Made by</th><th>Outcome</th><th>Creates</th></tr></thead>
+      <tbody>
+        <tr><td class="num">1</td><td class="num">1</td><td class="num">1</td><td class="num">Wk 1 Thu 10:00</td><td>A</td><td class="o-miss">No answer</td><td>Task 2, about 15 min later</td></tr>
+        <tr><td class="num">2</td><td class="num">1</td><td class="num">2</td><td class="num">Wk 1 Thu ~10:15</td><td>A</td><td class="o-hit">Reached</td><td>Task 3, Callback 2 for next Thursday</td></tr>
+        <tr><td class="num">3</td><td class="num">2</td><td class="num">1</td><td class="num">Wk 2 Thu 10:00</td><td>B</td><td class="o-miss">No answer</td><td>Task 4</td></tr>
+        <tr><td class="num">4</td><td class="num">2</td><td class="num">2</td><td class="num">Wk 2 Thu ~10:15</td><td>B</td><td class="o-miss">No answer</td><td>Task 5, next business day at 10:00</td></tr>
+        <tr><td class="num">5</td><td class="num">2</td><td class="num">3</td><td class="num">Wk 2 Fri 10:00</td><td>C</td><td class="o-hit">Reached</td><td>Task 6, Callback 3 in two weeks</td></tr>
+        <tr><td class="num">6</td><td class="num">3</td><td class="num">1</td><td class="num">Wk 4 Thu 10:00</td><td>A</td><td class="o-miss">No answer</td><td>Task 7</td></tr>
+        <tr><td class="num">7</td><td class="num">3</td><td class="num">2</td><td class="num">Wk 4 Thu ~10:15</td><td>A</td><td class="o-miss">No answer</td><td>Task 8, next business day at 10:00</td></tr>
+        <tr><td class="num">8</td><td class="num">3</td><td class="num">3</td><td class="num">Wk 4 Fri 10:00</td><td>B</td><td class="o-end">No answer</td><td>Nothing. The series ends and Callback 4 never happens</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Eight tasks, three callbacks tried, two completed. The client was a four-callback VA enrollee but left the service at Callback 3. The transcripts do not say who creates the attempt 3 task. The table assumes it is the specialist who missed attempt 2.</p>
+</section>
+
+<section>
+  <h2>How many</h2>
+  <div class="pair">
+    <div>
+      <h3>Callbacks by line</h3>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Line</th><th>Callbacks</th></tr></thead>
+          <tbody>
+            <tr><td>VA quit smoking</td><td class="num">up to 4</td></tr>
+            <tr><td>VA, extended on request</td><td class="num">up to ~9</td></tr>
+            <tr><td>Clinical trials, clients sent a search</td><td class="num">2</td></tr>
+            <tr><td>General cancer</td><td class="num">0</td></tr>
+            <tr><td>Regular smoking queue</td><td class="num">0</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Clinical trials callbacks use "the same kind of process as the VA ones" (Holly). Holly first said 3 for clinical trials, and Adrianna corrected it to "now down to 2." General cancer has none today, and Holly wants the option later.</p>
+    </div>
+    <div>
+      <h3>Tasks per client</h3>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Scenario</th><th>Callbacks</th><th>Tasks</th></tr></thead>
+          <tbody>
+            <tr><td>VA, every callback reached on attempt 1</td><td class="num">4</td><td class="num">4</td></tr>
+            <tr><td>VA, every callback takes all 3 attempts</td><td class="num">4</td><td class="num">12</td></tr>
+            <tr><td>VA extended, worst case</td><td class="num">9</td><td class="num">27</td></tr>
+            <tr><td>Clinical trials, worst case</td><td class="num">2</td><td class="num">6</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Twelve is Holly's figure. The other rows are arithmetic from the attempt rules.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Rules that ride on the task</h2>
+  <ul class="rules">
+    <li><b>Time zone</b><span>The specialist records the client's local time zone and time. Workspace rules convert it to Seattle time and handle daylight saving. Clients span the US and its territories, including Guam.</span></li>
+    <li><b>Fields by line</b><span>The task workspace shows or hides fields depending on whether the task is VA or clinical trials.</span></li>
+    <li><b>Own fields, not inquiry coding</b><span>Callbacks are the one interaction type that skips the universal inquiry coding. They carry their own fields on the task.</span></li>
+    <li><b>Context lives on the inquiry</b><span>To work a callback, the specialist opens the task and clicks through to the original inquiry.</span></li>
+    <li><b>Manual dialing</b><span>Nothing dials a callback automatically and nothing puts one in a queue. Specialists dial by hand from the report.</span></li>
+    <li><b>Entry points</b><span>Callback 1 comes from the intake call or from a VA Direct referral, which specialists paste into Oracle by hand before creating the callback task.</span></li>
+    <li><b>Text reminders</b><span>The callback report goes to Amazon Pinpoint, which texts the client 24 hours and 1 hour before. The texts carry no PII or PHI, replies get an automated "call us" response, and delivery status writes back to Oracle. Texts go only to clients who gave SMS consent and are enrolled in callbacks.</span></li>
+    <li><b>Shifts</b><span>Specialists on a callback shift take no inbound calls, and otherwise have the same skills as everyone else. Clinical trials specialists have their own callback shifts and also work the CCR web-form email queue during them.</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>Looks like a callback, is not</h2>
+  <div class="lookalikes">
+    <div class="la fence">
+      <span class="chip c-stop">Separate feature</span>
+      <h3>Follow-up surveys</h3>
+      <p>Tobacco only. Calls at roughly 4, 7 and 13 months to check whether the client quit. Built as Oracle surveys embedded in the workspace, not tasks, and worked from their own report. Consent comes from a question on the demographics survey. Nobody knows why the VA requires phone rather than an emailed link.</p>
+    </div>
+    <div class="la">
+      <span class="chip c-warn">Shares the shift</span>
+      <h3>Proactive calls</h3>
+      <p>Outreach that Fred Hutch starts, scheduled as tasks and worked on the same callback shifts. No series agreed with the client, and the attempt rules are unknown. May be the "ProActor" queue seen on the Oracle tour.</p>
+    </div>
+    <div class="la">
+      <span class="chip c-warn">Shares the shift</span>
+      <h3>CCR web-form follow-up</h3>
+      <p>When a clinical trials web form is missing information, the specialist on the clinical trials callback shift calls or emails the client. It is a single try, possibly followed by an email, with no series.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>What any design has to keep</h2>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>Requirement</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Every attempt and its outcome recorded individually</td><td><span class="chip c-ok">Agreed</span></td></tr>
+        <tr><td>Callback number kept alongside attempt number. Avi left room on how it is modeled</td><td><span class="chip c-ok">Agreed</span></td></tr>
+        <tr><td>VA reporting: answer rates, effort until contact, callbacks per client, total work done</td><td><span class="chip c-ok">Agreed</span></td></tr>
+        <tr><td>Callbacks and follow-up surveys are separate, with separate data</td><td><span class="chip c-ok">Agreed</span></td></tr>
+        <tr><td>Callbacks can extend to other call types later, general cancer first</td><td><span class="chip c-acc">Directional</span></td></tr>
+        <tr><td>A calendar view of callbacks</td><td><span class="chip c-acc">Asked for</span></td></tr>
+        <tr><td>Scheduled future callbacks migrate from Oracle</td><td><span class="chip c-warn">Potentially</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>Only the client can answer</h2>
+  <div class="tbl">
+    <table>
+      <thead><tr><th>Question</th><th>What it decides</th><th>Ask</th></tr></thead>
+      <tbody>
+        <tr><td>What counts as reached? Voicemail, a wrong number, or a client who answers but asks to reschedule?</td><td>The branch after each attempt</td><td>Holly</td></tr>
+        <tr><td>Does a text go out before every attempt, including attempt 3 at the new time? Is it 1 hour before or about 2 hours? The walkthroughs differ.</td><td>The SMS rebuild (RAID-39, SMS reminders off Pinpoint)</td><td>Adrianna, Mark</td></tr>
+        <tr><td>Is the window a full hour or a half hour? Clients have been told "between 11:30 and noon"</td><td>When attempt 1 is due</td><td>Holly</td></tr>
+        <tr><td>Who decides on extended callbacks, and do the same attempt rules apply?</td><td>The end of the series</td><td>Adrianna</td></tr>
+        <tr><td>Next business day: what happens on federal holidays, or when T falls outside that day's shifts?</td><td>Attempt 3 scheduling</td><td>Holly</td></tr>
+        <tr><td>Which callbacks migrate: future scheduled ones only, or in-flight series with their attempt history?</td><td>The migration spec (RAID-23, Oracle data objects and volumes)</td><td>Mark</td></tr>
+        <tr><td>How many outbound calls per week: attempts, proactive calls, surveys?</td><td>Sizing. Adrianna is pulling the numbers</td><td>Adrianna</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>Design questions to work through</h2>
+  <p class="note">Framing only, no answers. These are the choices the Salesforce design turns on.</p>
+  <ul class="qs">
+    <li><strong>Record shape.</strong> One record per attempt, as Oracle does it, or a callback record with its attempts beneath it? Avi's framing: who needs to be contacted, then how many tries and the outcome of each.</li>
+    <li><strong>Who creates the next task.</strong> A specialist by hand, as today, or automation driven by the attempt outcome: 15 minutes, next business day, end of series?</li>
+    <li><strong>How work reaches people.</strong> A report worked from the top, or routed work that goes to whoever is on a callback shift?</li>
+    <li><strong>Where time zones live.</strong> Where the local-to-Seattle conversion happens, and what reference time the shifts use once they are defined outside Oracle.</li>
+    <li><strong>End states.</strong> What a completed series and an ended series leave behind, and how a client who calls in later starts a new one.</li>
+    <li><strong>Extending it.</strong> What it would take to switch callbacks on for general cancer without rebuilding.</li>
+  </ul>
+</section>
+
+<footer>
+  <div><strong>Still to come from the client.</strong> The internal knowledge base article on callbacks and the "callback coding logistics" document, both offered by Adrianna and Holly. Neither has arrived yet. Mark also confirmed that Kicksaw can create callbacks in the Oracle test environment, which is the fastest way to see the task workspace directly.</div>
+  <div>Sources: the NCI call center reverse demo, discovery sessions 1, 2 and 3, and the clinical trials workflow session.</div>
+  <div class="copy"><span>Copyright © 2026 Kicksaw</span><span>Kicksaw internal · Fred Hutch NCI CIS</span></div>
+</footer>
+
+</div>

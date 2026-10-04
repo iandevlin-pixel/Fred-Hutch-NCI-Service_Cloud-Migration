@@ -1,0 +1,91 @@
+# Client data. Never commit. See the hard rules in CLAUDE.md.
+extracts/
+**/extracts/
+*.parquet
+*.csv.gz
+data/
+workbooks/
+
+# Internal Kicksaw calls. Filename pattern is the control: any transcript with
+# an -internal- segment is Kicksaw-only and never reaches a client surface.
+**/*-internal-*.md
+
+# Call transcripts. Client calls live in the Notion Fred Hutch Transcripts
+# database, the source of truth; the files here are local working copies.
+# The whole folder stays out of git, including its index and template.
+# Decided by Ben Bolding 2026-09-30, widened to the folder 2026-10-01.
+discovery/transcripts/
+
+# Local only: stays on Ben Bolding's machine and never reaches the GitHub
+# remote. Decided by Ben Bolding 2026-10-01.
+# The PM agent's working area: the local decision register and its
+# companions, until the register moves to the Notion RAID Log through the
+# PM agent. The folder's README is the one file that is shared.
+pm/*
+!pm/README.md
+# Scope Tracker snapshots carry fees and billing terms. The live tracker is
+# in Google Drive.
+project/scope-tracker/
+# Superseded documents. The folder's README is shared.
+archive/*
+!archive/README.md
+# Drafts awaiting review and third-party AI output.
+CLAUDE.proposed.md
+migration/cis-contact-center-history-2026-09-30.md
+migration/reference/
+
+# Anything under a _private path is out of version control entirely.
+_private/
+**/_private/
+
+# Local tooling and OS noise
+.DS_Store
+.remember/
+.bevel/
+.venv/
+__pycache__/
+*.pyc
+.sf/
+.sfdx/
+node_modules/
+
+# Scratch and backups
+*.bak
+*.bak-*
+scratch/
+tmp/
+
+# --- Salesforce DX ---
+# Added 2026-09-16 with the DX project scaffold. Only lines not already
+# covered above. .sf/, .sfdx/, node_modules/, .DS_Store, __pycache__ and
+# .venv were already handled by the rules at the top of this file.
+
+# Salesforce CLI local state
+.localdevserver/
+deploy-options.json
+
+# LWC VSCode autocomplete
+**/lwc/jsconfig.json
+
+# Test coverage
+coverage/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Tool caches
+.pmdCache
+.eslintcache
+
+# Local environment variables
+.env
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
